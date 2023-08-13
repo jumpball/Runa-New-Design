@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/runa/_head.htm',{
+"title":"Главная"
+})
+<!-- BODY -->
+
+<body>
+	<!-- WRAPPER -->
+	<div data-sticky class="wrapper">
+		<!-- HEADER -->
+		@@include('html/runa/_header.htm',{})
+		<!-- MAIN - PAGE -->
+		<main class="page">
+
+			<!-- HEAD SLIDER -->
+			<div class="first-section site-bg section-offset">
+				@@include('html/runa/_head-slider.htm',{})
+			</div>
+
+			<!-- CALENDAR SLIDER -->
+			<section class="site-bg-1 section-offset-border">
+				<div class="section__container">
+					<!-- <h2 class="section-title section-title-h2 section-title-white element-animation">Ближайшие матчи</h2> -->
+					@@include('html/runa/_game-timer.htm',{})
+					@@include('html/runa/_calendar-slider.htm',{})
+
+				</div>
+			</section>
+
+			<!-- BANNER SLIDER -->
+			<!--<div class="site-bg">
+				<div class="section__container">
+					 
+				</div>
+			</div> -->
+
+			<!-- PUBLICATION SELECTOR -->
+			<section class="site-bg section-offset">
+				<div class="section__container">
+					<div class="title-block">
+						<h2 class="section-title section-title-h2 section-title-green element-animation">Новости</h2>
+						<div class="publications-slider__navigation">
+							<div class="publications-slider__nav-prev -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="стрелка назад">
+							</div>
+							<div class="publications-slider__nav-next -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-right-green.svg" alt="стрелка вперед">
+							</div>
+						</div>
+					</div>
+					<!-- === SLIDER - PUBLICATION CARDS === -->
+					<div class="pulications-slider__box">
+						@@include('html/runa/_net-to-slider.htm',{})
+					</div>
+					<!-- === BUTTON - ALL PUBLICATION === -->
+					<button type="button" class="pub-selector-button">лента новостей</button>
+
+				</div>
+				<div class="site-bg-img-1">
+					<img src="@img/RUNA/LOGO/runa-mini-green.svg" alt="">
+				</div>
+			</section>
+
+			<!-- GENERAL PARTNER -->
+			<section class="site-bg-1 section-offset">
+				<div class="section__container">
+					<h2 class="section-title section-title-h2 section-title-white title-none-450 element-animation">
+						генеральный партнер</h2>
+					<svg preserveAspectRatio="xMidYMid meet" data-bbox="9.7 389.8 980.6 220.3"
+						viewBox="9.7 389.8 980.6 220.3" xmlns="http://www.w3.org/2000/svg" data-type="color"
+						role="presentation" aria-hidden="true" aria-labelledby="svgcid--onmbq0pqaui1">
+						<title id="svgcid--onmbq0pqaui1"></title>
+						<g>
+							<path
+								d="M795.7 486.3c-1.3 0-3.7.3-5.7.3-9.9.8-13.7 2.5-13.7 7.5 0 5.1 4.9 8.3 13 8.3 2.3 0 5.1-.5 6.4-.5 11.7-.9 19.5-8.5 19.5-17.5 0 0 0-1.5-.6-1.9-5.4 2.8-11.9 3.8-18.9 3.8m-367 15.6c-1.4.1-4.3.5-6.5.5-7.9 0-13-3.2-13-8.3 0-5 3.8-6.6 13.9-7.5 1.8 0 4.2-.6 5.7-.6 7.1 0 13.3-.7 19.4-3.5v1.9c-.1 9-7.6 16.3-19.5 17.5m367-63.7c-22.1 0-36.8 2.5-45.4 9.5l2.8-7.9h-38.9l-10.3 34.8c-1.4 5.4-2.7 9.8-4 14.5-1.4-5.4-3.2-9.9-4.2-12.7l-14.2-36.6H655L640.7 477c-2.3 5.5-4.2 9.6-5.5 14.2-1.3-6.8-2.1-12.9-3.3-16.5l-9.6-34.8h-36.4v-24.5h-35.8v25.1h-18.6v-.9c0-4.6 2.7-5.8 7.4-5.8h6.9v-19.5h-20.4c-21 0-29.1 5.4-29.1 22.1v4.2h-21.5v6.8c-.1-.4-.6-.7-1.1-1.4-10.7-7.6-32.4-7.9-45-7.9-27 0-43.1 4.1-49.9 15.2-3.5-10.4-11.2-15.1-24.2-15.1-9.9 0-17.4 2.4-22.9 7.8v-6.1h-72.1l-25.5 24.9v-49.4h-35.8V520h35.8v-17.6l15.1-13.8 19.5 31.4h63.8v-41.7c0-9.2 2.3-14.7 8.5-14.7 6.9 0 8.8 6.6 8.8 12.2h31.4c0-4.1-.3-9.1-.6-12.9h31.7c.5-5.8 6.2-6.4 16.5-6.4 4.7 0 18.5.6 18.5 7.5 0 4.9-6.2 5.9-18.5 5.9-4.8 0-11.3.5-18.7 1-17.4.5-29.6 1.8-37.2 11-3 3.7-4.3 8.5-4.3 14.7 0 17.3 12.9 23.4 39.6 23.4 7.8 0 14.9-.6 20.5-1.3 7.3-.9 13.9-4.1 19.4-9.9 0 4.5 1.3 7.5 2.8 11.2H489l-.2-3.5c-.7-.3-1.4-1.3-1.4-1.3-1.8-1.8-3-4.2-3-7.3V477c0-5.3-.4-10.3-1.5-14.1h13.3V520h35.9v-57.1H550v32.6c0 10.8 3 21 10.3 22.8 4.4.7 13.2 1.7 21.8 1.7h17.7v-22.2h-5.5c-8.5 0-8.5-5-8.5-17.1v-17.8h5l19.5 57.1h40l14.3-33.4c1.3-2.9 1.9-6.7 3.3-10.2.6 3.5 1.5 7.9 2.8 11l13.7 32.5h40.7l19.4-55.9 35 .6c.3-5.7 5.9-8.2 16-8.2h2.4c9.9 0 15.6 3.8 15.6 7.5 0 4.9-5.9 6.1-17.8 6.1-4.5 0-11.3.4-18.5.9-17.5.7-29.9 1.8-37.1 11-3.1 3.7-4.4 8.5-4.4 14.7 0 17.3 12.9 23.4 39.5 23.4 7.8 0 15-.9 20.5-1.3 6.8-.7 13.7-4.1 19.5-9.9 0 4.5 1.1 7.5 2.6 11.2h37.1v-1.7c-3.1-2-3.1-5.7-3.1-10.5v-30.9c0-4.8-.4-8.9-1.3-12.9l24.9 44.7c-2.8 9.5-6.9 11.2-16.7 11.2h-8.3v21.8h25c10 0 17.5-1.2 23.8-7.5 4.2-3.8 9.7-12.6 16.2-24.6l34.4-69.9h-38.5L898.4 470c-1.3 3.7-2.8 7.4-3.5 11-1.1-4.1-2.7-8.4-4.8-12.8l-13-28.6h-39.8l4.1 7.4c-.4-.3-.8-.7-1.2-1.3-7.1-5.1-21.7-7.8-42.9-7.8-.4.1-1.2.3-1.6.3m-519.8 29.1 22.8-19.3v53.2l-22.8-33.9z"
+								fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" data-color="1"></path>
+							<path
+								d="M74.9 553.3c-37.2-8.1-65.2-41.7-65.2-82.5 0-38.8 28-71.6 65.2-79.1 5.4-1.2 11.2-1.9 16.8-1.9 14.9 0 27 1.9 37.7 7.6l-36.9 58.9h28.7l27.6-44.8c13.3 13.2 26.3 37.6 26.3 59.3 0 19.5-6.5 37.4-17.5 51.7-15.2 19.7-39.1 32.3-66 32.3-5.5.1-11.3-.6-16.7-1.5m0-12.1c29.7 0 54.6-21.9 54.6-52.5 0-11.2-4.1-24.9-8.2-32.2l-41.2 62.8H36.6l38.3-59 16.8-25.9c-5.4-1.2-10.9-1.4-16.8-1.4v-.1c-29.7 0-54.6 23.6-54.6 54.6 0 31.7 24.5 53.7 54.6 53.7"
+								fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" data-color="1"></path>
+							<path
+								d="M975.6 424.3c2.5 0 4.9.6 7.2 1.9 2.3 1.3 4.2 3.1 5.5 5.4 1.3 2.3 2 4.8 2 7.4 0 2.5-.7 5-2 7.3s-3.1 4.2-5.4 5.4c-2.3 1.3-4.8 1.9-7.3 1.9s-5-.6-7.3-1.9c-2.3-1.3-4.2-3.1-5.4-5.4-1.3-2.3-2-4.8-2-7.3 0-2.6.7-5 2-7.4 1.3-2.4 3.2-4.2 5.5-5.4 2.3-1.3 4.7-1.9 7.2-1.9m0 2.5c-2.1 0-4.1.5-6 1.6-1.9 1.1-3.5 2.6-4.6 4.5-1.1 2-1.6 4-1.6 6.2 0 2.1.5 4.1 1.6 6.1 1.1 1.9 2.6 3.4 4.6 4.5 1.9 1.1 4 1.7 6.1 1.7 2.1 0 4.1-.6 6.1-1.7s3.5-2.6 4.6-4.5c1.1-1.9 1.6-4 1.6-6.1 0-2.1-.5-4.2-1.7-6.2-1.1-1.9-2.6-3.4-4.6-4.5-2-1.1-4-1.6-6.1-1.6m-6.4 20.4v-15.8h5.5c1.9 0 3.2.2 4 .5.8.3 1.5.8 2 1.5s.8 1.5.8 2.3c0 1.2-.4 2.2-1.3 3-.8.9-1.9 1.3-3.3 1.4.5.3 1 .6 1.3.8.6.6 1.4 1.7 2.3 3.2l1.9 3.1h-3.1l-1.4-2.5c-1.1-2-2-3.2-2.6-3.7-.5-.4-1.1-.5-2-.6h-1.5v6.7h-2.6zm2.5-8.9h3.1c1.5 0 2.5-.2 3-.7.5-.4.8-1 .8-1.8 0-.4-.1-.9-.4-1.2-.3-.4-.6-.7-1.1-.8-.4-.2-1.3-.3-2.5-.3h-2.9v4.8z"
+								fill="#ffffff" data-color="1"></path>
+							<path
+								d="M207 579.1c3.3 0 5.8.6 7.5 1.8 1.6 1.1 2.8 2.4 3.4 3.8.4.8.6 1.5.7 2.2.1.7.2 1.3.2 1.8v.5c-.1 2.3-1.1 4.4-2.8 6.2-1.8 1.9-4.3 2.8-7.9 2.8h-4v11.5H198v-30.6h9zm0 14.4c1.7 0 3-.5 3.9-1.5.8-1 1.3-2.1 1.3-3.4 0-1.2-.4-2.2-1.2-3.2-.8-1-2.1-1.4-4-1.4h-2.8v9.5h2.8z"
+								fill="#ffffff" data-color="1"></path>
+							<path
+								d="M254.4 582.8c2.9 2.7 4.3 6.6 4.3 11.7s-1.4 9-4.3 11.6c-2.9 2.7-6.4 4-10.7 4-4.3 0-7.8-1.3-10.7-4-2.9-2.6-4.3-6.5-4.3-11.6s1.4-9 4.3-11.7 6.4-4 10.7-4c4.2 0 7.8 1.3 10.7 4m-12.2.5c-.5.1-1.1.2-1.6.4-1.4.5-2.6 1.6-3.8 3.2-1.1 1.6-1.6 4.1-1.6 7.6 0 3.4.5 6 1.6 7.5 1.2 1.6 2.4 2.7 3.8 3.2.5.2 1.1.3 1.6.4.5.1 1 .1 1.5.1.4 0 .9-.1 1.4-.1.5-.1 1.1-.2 1.6-.4 1.4-.5 2.6-1.6 3.7-3.2s1.7-4.1 1.7-7.5c0-3.5-.6-6-1.7-7.6-1.2-1.6-2.4-2.7-3.7-3.2-.5-.2-1.1-.4-1.6-.4s-1-.1-1.4-.1c-.5 0-.9 0-1.5.1"
+								fill="#ffffff" data-color="1"></path>
+							<path
+								d="M292.6 608.8c-.9.4-1.9.6-2.9.8-1 .2-2 .4-3 .4-.3 0-.6.1-1 .1h-1c-4.3 0-8.1-1.3-11.2-3.8-3.1-2.6-4.7-6.5-4.7-11.6 0-4.8 1.5-8.7 4.6-11.5 3-2.8 7.2-4.3 12.5-4.3 1 0 1.9.1 2.7.1.8.1 1.6.3 2.4.4.3.1.5.2.8.3.3.1.5.1.8.2l-.3 5.2c-1-.4-2-.7-3-.9-1-.2-2-.3-3.1-.3-3.1 0-5.7.9-7.8 2.7-2.1 1.8-3.1 4.4-3.1 7.9s.9 6 2.7 7.6c1.8 1.6 3.9 2.5 6.1 2.7.3.1.6.1.8.1h.8c1.2 0 2.3-.1 3.3-.3 1-.3 1.8-.5 2.5-.8.1-.1.2-.1.3-.1.1-.1.2-.1.3-.2l.5 5.3z"
+								fill="#ffffff" data-color="1"></path>
+							<path
+								d="M326.3 608.8c-.9.4-1.9.6-2.9.8-1 .2-2 .4-3 .4-.4 0-.7.1-1 .1h-1c-4.3 0-8.1-1.3-11.2-3.8-3.1-2.6-4.7-6.5-4.7-11.6 0-4.8 1.5-8.7 4.6-11.5 3-2.8 7.2-4.3 12.5-4.3 1 0 1.9.1 2.7.1.8.1 1.6.3 2.4.4.3.1.5.2.8.3.3.1.5.1.8.2l-.3 5.2c-1-.4-2-.7-3-.9-1-.2-2-.3-3.1-.3-3.1 0-5.7.9-7.8 2.7-2.1 1.8-3.1 4.4-3.1 7.9s.9 6 2.7 7.6c1.8 1.6 3.9 2.5 6.1 2.7.3.1.6.1.8.1h.8c1.2 0 2.3-.1 3.3-.3 1-.3 1.8-.5 2.5-.8.1-.1.2-.1.4-.1.1-.1.2-.1.3-.2l.4 5.3z"
+								fill="#ffffff" data-color="1"></path>
+							<path fill="#ffffff"
+								d="M343.4 579.1v15.8l-.1 7.5h.1l2.2-4.5 10.7-18.8h7.5v30.7h-6.2V594l.1-7.4h-.1l-2.2 4.6-10.8 18.6h-7.4v-30.7h6.2z"
+								data-color="1"></path>
+							<path
+								d="M382.2 579.2v15.7l-.1 7.5h.1l2.2-4.5 10.7-18.7h7.4v30.6h-6.2V594l.1-7.4h-.1l-2.1 4.6-10.8 18.6H376v-30.6h6.2zm14.8-7.3c-.5 1.2-1.1 2.2-1.9 2.9-.8.7-1.5 1.2-2.4 1.5-.7.3-1.4.5-2.1.6-.6.1-1.3.1-1.8.1s-1.1 0-1.8-.1-1.4-.3-2-.5c-.8-.4-1.6-.9-2.4-1.5-.8-.7-1.4-1.7-1.9-2.9l3.2-1.7c.1.2.1.3.2.5s.3.4.5.7c.4.4.9.8 1.5 1.1.7.3 1.6.5 2.7.5s2-.1 2.7-.5c.7-.3 1.2-.7 1.5-1.1.2-.2.4-.4.4-.7.1-.2.2-.4.3-.5l3.3 1.6z"
+								fill="#ffffff" data-color="1"></path>
+							<path
+								d="M437.6 608.8c-.9.4-1.9.6-2.9.8-1 .2-2 .4-3 .4-.4 0-.7.1-1 .1h-1c-4.3 0-8.1-1.3-11.2-3.8-3.2-2.6-4.7-6.5-4.7-11.6 0-4.8 1.5-8.7 4.6-11.5 3-2.8 7.2-4.3 12.5-4.3 1 0 1.9.1 2.8.1.8.1 1.6.3 2.4.4.3.1.5.2.8.3.3.1.5.1.8.2l-.3 5.2c-1-.4-2-.7-3-.9-1-.2-2-.3-3.1-.3-3.1 0-5.7.9-7.8 2.7-2.1 1.8-3.1 4.4-3.1 7.9s.9 6 2.8 7.6c1.8 1.6 3.9 2.5 6.1 2.7.3.1.6.1.8.1h.8c1.2 0 2.3-.1 3.3-.3 1-.3 1.8-.5 2.5-.8.1-.1.2-.1.4-.1.1-.1.2-.1.3-.2l.2 5.3z"
+								fill="#ffffff" data-color="1"></path>
+							<path fill="#ffffff"
+								d="M454.7 579.1v13.1h.2l11-13.1h7.4L460.5 593l13.6 16.8h-7.9l-11.3-15.3h-.2v15.3h-6.2v-30.7h6.2z"
+								data-color="1"></path>
+							<path fill="#ffffff"
+								d="M489.8 579.1v15.8l-.1 7.5h.1l2.2-4.5 10.7-18.8h7.4v30.7h-6.2V594l.2-7.4h-.2l-2.1 4.6-10.8 18.6h-7.4v-30.7h6.2z"
+								data-color="1"></path>
+							<path fill="#ffffff" d="M540.7 579.1v5.5h-12.1v6.9h11v5h-11v7.8h12.1v5.5h-18.3v-30.7h18.3z"
+								data-color="1"></path>
+							<path fill="#ffffff" d="M595 579.1v5.5h-8.8v25.2H580v-25.2h-8.9v-5.5H595z" data-color="1"></path>
+							<path fill="#ffffff" d="M623.1 579.1v5.5h-12v6.9H622v5h-10.9v7.8h12v5.5h-18.2v-30.7h18.2z"
+								data-color="1"></path>
+							<path fill="#ffffff"
+								d="m640.6 579.1 4.9 8.6 1.4 2.6h.1l1.4-2.6 5-8.6h6.8l-9.3 14.6 10.2 16.1h-7.3l-5.9-9.8-1.3-2.3h-.1l-1.3 2.3-6.1 9.8h-6.8l10.2-16.1-9.3-14.6h7.4z"
+								data-color="1"></path>
+							<path fill="#ffffff"
+								d="M677.4 579.1v12.4h12.4v-12.4h6.3v30.7h-6.3v-13.3h-12.4v13.3h-6.2v-30.7h6.2z" data-color="1">
+							</path>
+							<path
+								d="M732.9 582.8c2.9 2.7 4.3 6.6 4.3 11.7s-1.5 9-4.3 11.6c-2.9 2.7-6.4 4-10.7 4-4.3 0-7.8-1.3-10.7-4-2.9-2.6-4.3-6.5-4.3-11.6s1.4-9 4.3-11.7c2.9-2.7 6.4-4 10.7-4 4.3 0 7.8 1.3 10.7 4m-12.1.5c-.5.1-1.1.2-1.6.4-1.4.5-2.6 1.6-3.7 3.2s-1.7 4.1-1.7 7.6c0 3.4.6 6 1.7 7.5 1.1 1.6 2.3 2.7 3.7 3.2.5.2 1.1.3 1.6.4.5.1 1 .1 1.5.1s.9-.1 1.4-.1c.5-.1 1.1-.2 1.6-.4 1.4-.5 2.6-1.6 3.7-3.2s1.7-4.1 1.7-7.5c0-3.5-.5-6-1.7-7.6-1.1-1.6-2.4-2.7-3.7-3.2-.5-.2-1.1-.4-1.6-.4s-1-.1-1.4-.1-1 0-1.5.1"
+								fill="#ffffff" data-color="1"></path>
+							<path
+								d="M772 579.1v30.6h-6.2v-25.2h-8.1v6.1c0 5.8-.4 10.6-1.3 14.1-.8 3.5-3.4 5.3-7.7 5.3h-.7c-.3 0-.5-.1-.8-.1-.3-.1-.5-.1-.8-.1-.2-.1-.5-.1-.7-.1l.3-4.9h.2c.1 0 .2.1.2.1h.4c.1 0 .3.1.5.1h.4c1.9 0 3-1.1 3.5-3.3.5-2.2.7-4.7.7-7.3v-2.8c0-.4-.1-.9-.1-1.2v-11.3H772z"
+								fill="#ffffff" data-color="1"></path>
+							<path
+								d="M808.8 582.8c2.9 2.7 4.3 6.6 4.3 11.7s-1.4 9-4.3 11.6c-2.9 2.7-6.4 4-10.7 4-4.3 0-7.8-1.3-10.7-4-2.9-2.6-4.3-6.5-4.3-11.6s1.4-9 4.3-11.7c2.9-2.7 6.4-4 10.7-4 4.3 0 7.8 1.3 10.7 4m-12.1.5c-.5.1-1.1.2-1.6.4-1.4.5-2.6 1.6-3.7 3.2s-1.7 4.1-1.7 7.6c0 3.4.6 6 1.7 7.5 1.1 1.6 2.4 2.7 3.7 3.2.5.2 1.1.3 1.6.4.5.1 1 .1 1.5.1.4 0 .9-.1 1.4-.1.5-.1 1.1-.2 1.6-.4 1.4-.5 2.6-1.6 3.7-3.2s1.7-4.1 1.7-7.5c0-3.5-.5-6-1.7-7.6-1.1-1.6-2.4-2.7-3.7-3.2-.5-.2-1.1-.4-1.6-.4s-1-.1-1.4-.1c-.5 0-1 0-1.5.1"
+								fill="#ffffff" data-color="1"></path>
+							<path fill="#ffffff" d="M843.1 579.1v5.5h-12.6v25.2h-6.2v-30.7h18.8z" data-color="1"></path>
+							<path fill="#ffffff"
+								d="M858.9 579.1v15.8l-.1 7.5h.1l2.2-4.5 10.7-18.8h7.5v30.7h-6.2V594l.1-7.4h-.1l-2.1 4.6-10.8 18.6h-7.5v-30.7h6.2z"
+								data-color="1"></path>
+							<path fill="#ffffff"
+								d="M897.7 579.1v15.8l-.1 7.5h.1l2.2-4.5 10.7-18.8h7.5v30.7h-6.2V594l.1-7.4h-.1l-2.1 4.6-10.8 18.6h-7.5v-30.7h6.2z"
+								data-color="1"></path>
+						</g>
+					</svg>
+				</div>
+			</section>
+
+			<!-- TEAM ROSTERS -->
+			<section class="site-bg section-offset">
+				<div class="section__container">
+					<div class="title-block">
+						<h2 class="section-title section-title-h2 section-title-green element-animation">команды</h2>
+						<div class="roster-menu-slider__navigation">
+							<div class="roster-menu-slider__nav-prev -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="">
+							</div>
+							<div class="roster-menu-slider__nav-next -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-right-green.svg" alt="">
+							</div>
+						</div>
+					</div>
+					@@include('html/runa/_roster-selector.htm',{})
+				</div>
+				<div class="site-bg-img-1">
+					<img src="@img/RUNA/LOGO/runa-mini-green.svg" alt="">
+				</div>
+			</section>
+
+			<!-- TEAM LEADERS -->
+			<section class="site-bg-1 section-offset-border">
+				<div class="section__container">
+					<h2 class="section-title section-title-h2 section-title-white element-animation">лидеры</h2>
+					<!-- SPOLLERS / NAV SELECT - 2 BOX -->
+					<div data-spollers="499.98,max" class="spollers spollers__box spollers__box-499">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title spollers__title-499 -ibg">
+								<img src="@img/RUNA/icons/icon-select-white.svg" alt="">
+							</button>
+							<div class="spollers__body">
+								<!-- NAV SELECT / 2 BOX -->
+								<!-- TEAM LEADERS - NAV / SELECT -->
+								<div class="nav-select__nav">
+									<!-- TEAM LEADERS - FORM / 2 BOXES -->
+									<form action="#" class="nav-select__form-2-box">
+										<!-- TEAM LEADERS - FORM - SELECT / INDEX -->
+										<div class="nav-select__box">
+											<label class="nav-select__label nav-select__label-white" for="select-index">Выбрать
+												показатель</label>
+											<select data-label data-scroll data-show name="form[]" id="select-index"
+												class="nav-select__list">
+												<option class="nav-select__item" value="1" selected="selected">очки</option>
+												<option class="nav-select__item" value="2">передачи</option>
+												<option class="nav-select__item" value="3">подборы</option>
+												<option class="nav-select__item" value="4">кпи</option>
+											</select>
+										</div>
+										<!-- TEAM LEADERS - FORM - SELECT / TOURNAMENT -->
+										<div class="nav-select__box">
+											<label class="nav-select__label nav-select__label-white"
+												for="select-tournament-1">Выбрать турнир</label>
+											<select data-label data-scroll data-show name="form[]" id="select-tournament-1"
+												class="nav-select__list">
+												<option class="nav-select__item" value="1" selected="selected">мужская суперлига
+												</option>
+												<option class="nav-select__item" value="2">женская суперлига</option>
+												<option class="nav-select__item" value="3">молодежная Лига ВТБ</option>
+												<option class="nav-select__item" value="4">ДЮБЛ юноши</option>
+												<option class="nav-select__item" value="5">ДЮБЛ девушки</option>
+												<option class="nav-select__item" value="6">UBA</option>
+											</select>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					@@include('html/runa/_team-leaders.htm',{})
+				</div>
+			</section>
+
+			<!-- MEDIA MAIN -->
+			<section class="site-bg section-offset">
+				<div class="section__container">
+					<h2 class="section-title section-title-h2 section-title-green element-animation">медиа</h2>
+					@@include('html/runa/_tabs-video.htm',{})
+				</div>
+				<div class="section__container">
+					<div class="title-block">
+						<h2 class="section-title section-title-h2 section-title-green element-animation">Прямой эфир</h2>
+						<div class="video-slider__navigation">
+							<div class="video-slider__nav-prev -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="стрелка назад">
+							</div>
+							<div class="video-slider__nav-next -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-right-green.svg" alt="стрелка вперед">
+							</div>
+						</div>
+					</div>
+
+					@@include('html/runa/_media-main.htm',{})
+				</div>
+				<div class="site-bg-img-1">
+					<img src="@img/RUNA/LOGO/runa-mini-green.svg" alt="">
+				</div>
+
+
+
+			</section>
+
+			<!-- STORE -->
+			<section class="site-bg-1 section-offset-border">
+				<div class="section__container">
+					<div class="title-block">
+						<h2 class="section-title section-title-h2 section-title-white element-animation">магазин</h2>
+						<div class="store-slider__navigation">
+							<div class="store-slider__nav-prev -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-left-white.svg" alt="">
+							</div>
+							<div class="store-slider__nav-next -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-right-white.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<!-- STORE SLIDER -->
+					<div class="store-slider__box">
+						<div class="store-slider">
+							<div class="swiper-wrapper store-slider__wrapper">
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1200</h3>
+												<span>50</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<img data-src="@img/RUNA/store/6.jpg" alt="">
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Майка компрессионная</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 2400 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1300</h3>
+												<span>50</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<img data-src="@img/RUNA/store/7.jpg" alt="">
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Худи</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 2600 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1600</h3>
+												<span>20</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<img data-src="@img/RUNA/store/3.jpg" alt="">
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Накидка разминочная</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 2000 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>910</h3>
+												<span>30</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<img data-src="@img/RUNA/store/4.jpg" alt="">
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">штаны спортивные</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 1300 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1050</h3>
+												<span>30</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<img data-src="@img/RUNA/store/8.jpg" alt="">
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Шорты</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 1500 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="store-slider__pagination swiper-pagination"></div>
+						</div>
+					</div>
+					<!-- === BUTTON - GO TO STORE === -->
+					<div class="button__box-center">
+						<button type="button" class="store-button">магазин</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- PARTNERS -->
+			<section class="site-bg section-offset">
+				<div class="section__container">
+					<div class="publication-selector__title-block">
+						<h2 class="section-title section-title-h2 section-title-green element-animation">партнеры</h2>
+					</div>
+					@@include('html/runa/_partners-slider.htm',{})
+				</div>
+				<div class="site-bg-img-1">
+					<img src="@img/RUNA/LOGO/runa-mini-green.svg" alt="">
+				</div>
+			</section>
+		</main>
+		<!-- FOOTER -->
+		@@include('html/runa/_footer.htm',{})
+	</div>
+	@@include('html/runa/_popup.htm',{})
+	@@include('html/runa/_js.htm',{})
+</body>
+
+</html>

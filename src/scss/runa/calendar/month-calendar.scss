@@ -1,0 +1,193 @@
+// === MONTH CALENDAR === //
+.month-calendar {
+	width: 100%;
+	margin: 0px 0px 30px 0px;
+	font-family: "Roboto Condensed";
+	//overflow: hidden;
+	border-radius: rem(3);
+	border: 1px solid $sa_silver;
+	// = HEADER = //
+	&__header {
+	}
+
+	// = WEEK HEADER = //
+	&__week-header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		border-bottom: rem(1) solid $sa_silver;
+		@media (max-width: rem(991.98)) {
+			display: none;
+		}
+	}
+
+	&__week-header-day {
+		width: 100%;
+		text-align: center;
+		padding: 1.25rem 0.625rem;
+		color: #d5dde5;
+		background-color: #0f524d;
+		border-right: rem(1) solid $sa_silver;
+		font-size: rem(15);
+		text-transform: uppercase;
+		font-weight: 100;
+		text-align: center;
+		text-shadow: none;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+
+	// = DAY TITLE = //
+	&__day-title {
+	}
+	&__day-title-short {
+		display: none;
+	}
+
+	// = BODY = //
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	// = WEEK = //
+	&__week {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		//border-bottom: rem(1) solid $bgColor_2;
+		@media (max-width: rem(991.98)) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
+	}
+	&__week:not(:last-child) {
+		border-bottom: rem(1) solid $sa_silver;
+		@media (max-width: rem(991.98)) {
+			border-bottom: none;
+		}
+	}
+
+	// = DAY = //
+	&__day {
+		transition: all 0.5s ease 0s;
+		background-color: $white;
+		padding: rem(8);
+		min-width: rem(132);
+		border: rem(1) solid transparent;
+		@media (max-width: rem(991.98)) {
+			display: flex;
+			column-gap: rem(10);
+			@include adaptiveValue("min-height", 102.15, 92.15, 991.98, 649.98, 1);
+		}
+		@media (max-width: rem(599.98)) {
+			column-gap: rem(5);
+		}
+		@media (max-width: rem(429.98)) {
+			min-height: 0;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				transition: all 0.5s ease 0s;
+				transform: scale(1.02);
+				box-shadow: $shadow-2;
+				border: rem(1) solid $sa_silver;
+				border-radius: rem(3);
+				.game-card-calendar__tournament-logo {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&__day:not(:last-child) {
+		border-right: rem(1) solid $sa_silver;
+		@media (max-width: rem(991.98)) {
+			border-bottom: rem(1) solid $sa_silver;
+			border-right: none;
+		}
+	}
+	&__day-body {
+		position: relative;
+		padding: 10px 0px 0px 0px;
+		height: fit-content;
+		min-height: rem(150);
+
+		@media (max-width: rem(991.98)) {
+			min-height: 0;
+			padding: 0px 0px 0px 0px;
+			width: 100%;
+		}
+		@media (max-width: rem(599.98)) {
+			//min-height: rem(90);
+		}
+	}
+	&__day-disable {
+		.month-calendar__day-header {
+			background-color: #eef0f2;
+		}
+		.month-calendar__date,
+		.month-calendar__week-day {
+			color: $gray;
+			opacity: 0.6;
+		}
+		.month-calendar__date {
+			//-webkit-text-stroke-width: rem(1);
+			//-webkit-text-stroke-color: $color-base-1;
+		}
+
+		@media (max-width: rem(991.98)) {
+			display: none;
+		}
+	}
+	&__day-today {
+		.month-calendar__day-header {
+			//background-color: #eef0f2;
+			background-color: $bgColor_9;
+			border: rem(1) solid $sa_silver;
+		}
+		.month-calendar__date,
+		.month-calendar__week-day {
+			color: $mia_red;
+		}
+	}
+	&__empty-day {
+		@media (max-width: rem(991.98)) {
+			display: none;
+		}
+	}
+
+	// = DAY HEADER = //
+	&__day-header {
+		height: rem(45);
+		width: 100%;
+		padding: 0.3125rem;
+		background-color: #f0f8ff;
+		border: rem(1) solid $sa_silver;
+		border-radius: rem(3);
+		@media (max-width: rem(991.98)) {
+			height: 100%;
+			width: rem(45);
+		}
+	}
+
+	// = DATE = //
+	&__date {
+		text-align: end;
+		font-size: rem(30);
+		font-weight: 900;
+		font-family: "Oswald", sans-serif;
+		color: $color-base-1;
+	}
+
+	// = WEEK DAY = //
+	&__week-day {
+		display: none;
+		font-size: rem(14);
+
+		@media (max-width: rem(991.98)) {
+			width: 100%;
+			display: inline-block;
+			color: $color-base-1;
+			text-align: center;
+		}
+	}
+}
