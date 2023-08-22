@@ -16,7 +16,7 @@
 @import "runa/text-style/text-style";
 
 // = SITE FUNCTIONS = //
-@import "runa/game/game-timer";
+//@import "runa/game/game-timer";
 
 // = SELECTORS = //
 @import "runa/selectors/selectors";
@@ -55,6 +55,7 @@
 @import "runa/game/game-card-playoff";
 @import "runa/calendar/game-card-calendar";
 @import "runa/store/store-card";
+@import "runa/game/pattern-game-card";
 
 // = SLIDERS = //
 @import "runa/sliders/head-slider";

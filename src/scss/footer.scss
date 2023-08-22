@@ -86,8 +86,8 @@
 	// = LOGO = //
 	&__logo {
 		display: block;
-		@include adaptiveValue("width", 220, 175, 1600, 991.98, 1);
-		@include adaptiveValue("height", 124.6, 99, 1600, 991.98, 1);
+		@include adaptiveValue("width", 200, 175, 1600, 991.98, 1);
+		@include adaptiveValue("height", 148.99, 130.36, 1600, 991.98, 1);
 		margin-right: auto;
 		@media (max-width: rem(959.98)) {
 			margin-right: 0;

@@ -199,7 +199,7 @@ import "./files/blog-slider.js";
 import "./files/tabs-slider.js";
 import "./files/animation-scroll.js";
 import "./files/form-new.js";
-import "./files/game-timer.js";
+//import "./files/game-timer.js";
 import "./files/club-history-selector.js";
 import "./files/net-to-slider.js";
 //import "./files/animation.js";

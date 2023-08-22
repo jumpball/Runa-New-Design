@@ -9,12 +9,12 @@
 
 // === BUTTONS === //
 .base-button {
-	border-radius: rem(3);
+	//border-radius: rem(3);
 	text-transform: uppercase;
 	letter-spacing: rem(2);
 	pointer-events: all;
 	transition: all 0.5s ease 0s;
-	box-shadow: 2px 2px 4px rgba(34, 60, 80, 0.4);
+	//box-shadow: 2px 2px 4px rgba(34, 60, 80, 0.4);
 	@media (any-hover: hover) {
 		&:hover {
 			box-shadow: 4px 4px 8px rgba(34, 60, 80, 0.4);
@@ -40,6 +40,17 @@
 		padding: 12px 24px 12px 24px;
 	}
 }
+.cards-button {
+	height: rem(56);
+	min-width: rem(250);
+	padding: 16px 32px 16px 32px;
+	border-radius: 15px 0px 15px 0px;
+	gap: 10px;
+	line-height: rem(24);
+	font-size: rem(22);
+	font-weight: 700;
+}
+
 .average-button {
 	line-height: rem(20);
 	height: rem(40);
@@ -71,12 +82,12 @@
 	display: inline-flex;
 	width: 100%;
 	font-size: rem(15);
-	background-color: $white;
+	background-color: $color-base-4;
 	padding: rem(25) rem(35);
-	border-radius: rem(3);
+	border-radius: 0px rem(15) 0px rem(15);
 	min-width: 205px;
-	color: $color-base-1;
-	border: rem(1) solid $sa_silver;
+	color: $white;
+	//border: rem(1) solid $sa_silver;
 	text-decoration: none;
 	font-weight: 500;
 	justify-content: center;
@@ -185,32 +196,34 @@
 .pub-selector-button {
 	margin: 20px 0px 20px 0px;
 	display: inline-flex;
-	width: 100%;
-	font-size: rem(15);
+	width: fit-content;
+	font-size: rem(22);
+	font-weight: 700;
+	letter-spacing: 0.125rem;
 	background-color: $color-base-1;
 	padding: rem(25) rem(35);
-	border-radius: rem(3);
-	min-width: 205px;
-	color: $white;
+	border-radius: 0px rem(15) 0px rem(15);
+	min-width: 250px;
+	color: $color-base-3;
 	//border: rem(1) solid $sa_silver;
 	text-decoration: none;
-	font-weight: 500;
+	//font-weight: 500;
 	justify-content: center;
 	text-align: center;
-	letter-spacing: 1px;
+	//letter-spacing: 1px;
 	cursor: pointer;
 	text-transform: uppercase;
 	white-space: nowrap;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $mainColor;
-			color: $gold;
+			background-color: $color-base-2;
+			color: $white;
 			transition: all 0.5s ease 0s;
 		}
 	}
 }
 .pub-selector-button-active {
-	background-color: $color-base-1;
+	background-color: $color-base-4;
 	color: $white;
 }
 
@@ -279,35 +292,35 @@
 // === BUTTONS COLORS === //
 .green-button {
 	color: $white;
-	background-color: $color-base-1;
+	background-color: $color-base-4;
 	transition: all 0.5s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $mainColor;
+			background-color: $color-base-3;
 			transition: all 0.5s ease 0s;
 		}
 	}
 }
 .purple-button {
 	color: $white;
-	background-color: $color-base-2;
+	background-color: $color-base-1;
 	transition: all 0.5s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $mia_red;
+			background-color: $color-base-2;
 			transition: all 0.5s ease 0s;
 		}
 	}
 }
 .white-button {
 	color: $mainColor;
-	//background-color: $white;
+	background-color: $white;
 	transition: all 0.5s ease 0s;
-	border: rem(1) solid $color-base-1;
+	//border: rem(1) solid $white;
 	@media (any-hover: hover) {
 		&:hover {
-			color: $white;
-			background-color: $color-base-1;
+			//color: $white;
+			background-color: $color-base-3;
 			transition: all 0.5s ease 0s;
 		}
 	}

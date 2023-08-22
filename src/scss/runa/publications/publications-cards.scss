@@ -4,9 +4,10 @@
 	width: 100%;
 	height: auto;
 	min-width: 286px;
-	background: $white;
+	background: $color-base-1;
 	//border: 1px solid $mainColor;
-	border-radius: rem(3);
+	overflow: hidden;
+	border-radius: rem(15);
 	transition: box-shadow 0.3s;
 	z-index: 2;
 
@@ -14,7 +15,7 @@
 	&__thumb {
 		height: 235px;
 		overflow: hidden;
-		background-color: $mainColor;
+		background-color: transparent;
 		-webkit-transition: height 0.3s;
 		transition: height 0.3s;
 	}
@@ -24,8 +25,12 @@
 		object-fit: cover;
 		display: block;
 		opacity: 1;
-		-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-		transition: opacity 0.3s, transform 0.3s;
+		-webkit-transition:
+			opacity 0.3s,
+			-webkit-transform 0.3s;
+		transition:
+			opacity 0.3s,
+			transform 0.3s;
 		-webkit-transform: scale(1);
 		-ms-transform: scale(1);
 		transform: scale(1);
@@ -61,15 +66,19 @@
 	// === CARD CATEGORY === //
 	&__category {
 		position: absolute;
-		top: -25px;
+		//top: -25px;
+		top: 0;
 		right: 0;
-		height: 25px;
-		padding: 0 15px;
+		height: 30px;
+		padding: 0 24px;
 		background: $color-base-2;
+		border-radius: 0px 15px 0px 15px;
 		color: $white;
-		font-size: 11px;
-		line-height: 25px;
+		font-size: 12px;
+		line-height: 30px;
+		font-weight: 700;
 		letter-spacing: 2px;
+		z-index: 5;
 	}
 
 	&__category a {
@@ -84,8 +93,9 @@
 		padding: 0 0 10px 0;
 		margin: 0;
 		font-size: 18px;
-		color: $mainColor;
-		font-weight: 700;
+		color: $color-base-3;
+		font-weight: 600;
+		letter-spacing: rem(1);
 		@media (max-width: 1450px) {
 			font-size: 17px;
 			font-weight: 600;
@@ -123,7 +133,7 @@
 	&__subtitle {
 		margin: 0;
 		padding: 0 0 10px 0;
-		color: $color-base-1;
+		color: $white;
 		font-size: 14px;
 		letter-spacing: 2px;
 		font-weight: 400;
@@ -138,7 +148,7 @@
 		bottom: 70px;
 		margin: 0;
 		padding: 0;
-		color: $mainColor;
+		color: $white;
 		font-size: 14px;
 		line-height: 22px;
 		overflow: hidden;
@@ -151,8 +161,12 @@
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		opacity: 0;
-		-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-		transition: opacity 0.2s, transform 0.2s;
+		-webkit-transition:
+			opacity 0.2s,
+			-webkit-transform 0.2s;
+		transition:
+			opacity 0.2s,
+			transform 0.2s;
 		-webkit-transition-delay: 0s;
 		transition-delay: 0s;
 		-webkit-transform: translateY(25px);
@@ -177,8 +191,12 @@
 		overflow: hidden;
 		max-height: rem(118);
 		opacity: 0;
-		-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-		transition: opacity 0.2s, transform 0.2s;
+		-webkit-transition:
+			opacity 0.2s,
+			-webkit-transform 0.2s;
+		transition:
+			opacity 0.2s,
+			transform 0.2s;
 		-webkit-transition-delay: 0s;
 		transition-delay: 0s;
 		-webkit-transform: translateY(25px);
@@ -211,7 +229,7 @@
 	// === CARD FOOTER === //
 	&__footer {
 		position: absolute;
-		color: $black_l;
+		color: $color-base-5;
 		bottom: 20px;
 		left: 20px;
 		right: 20px;

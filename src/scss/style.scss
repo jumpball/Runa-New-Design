@@ -22,7 +22,8 @@ $fontFamily: "bebasneuepro";
 $fontSize: rem(16); // где 16(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #3a3a3a; // Цвет шрифта по умолчанию
+$mainColor: #181220; // Цвет шрифта по умолчанию
+//$mainColor: #3a3a3a; // Цвет шрифта по умолчанию
 // BG COLOR
 $bgColor_1: #f9f1e7;
 $bgColor_2: #eef0f2;
@@ -42,8 +43,14 @@ $gradient_zenit-rl: linear-gradient(to right, #71a6dc, #ffffff);
 //$color-base-1: #a80d1c;
 $color-gold: #f9d110;
 $color-zenit: #71a6dc;
-$color-base-1: #0f524d;
-$color-base-2: #3d308e;
+$color-base-1: #5b2a98;
+//$color-base-1: #0f524d;
+//$color-base-2: #3d308e;
+$color-base-2: #2e006a;
+$color-base-3: #a3d43f;
+$color-base-4: #8bc218;
+
+$color-base-5: #c4c5c8;
 
 $blue: #146eb4;
 $orange: #ff9900;
@@ -101,7 +108,8 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1570;
+//$maxWidthContainer: 1570;
+$maxWidthContainer: 1370;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;

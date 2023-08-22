@@ -1,7 +1,7 @@
 // === NET to SLIDER === //
 
 .publications-slider {
-	padding: 10px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
 	//width: 100%;
 	//@media (max-width: rem(949.98)) {
 	//}
@@ -11,8 +11,9 @@
 	//border: none;
 	//}
 	//}
+
 	.card {
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 	}
 	.swiper-wrapper {
 		display: grid;
@@ -30,7 +31,7 @@
 
 	&__slide {
 		min-height: rem(420);
-		background-color: $white;
+		//background-color: $white;
 	}
 
 	// = NAVIGATION = //

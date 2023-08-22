@@ -100,7 +100,7 @@
 	&__pagination {
 	}
 	.swiper-pagination {
-		display: none;
+		//display: none;
 		position: relative;
 		margin-top: rem(30);
 		@media (max-width: rem(767.98)) {
@@ -108,10 +108,10 @@
 		}
 	}
 	.swiper-pagination-bullet {
-		width: rem(20);
-		height: rem(20);
+		width: rem(14);
+		height: rem(14);
 		line-height: rem(20);
-		background-color: $white;
-		border: rem(1) solid $bgColor_2;
+		background-color: $color-base-3;
+		border: rem(1) solid $color-base-4;
 	}
 }

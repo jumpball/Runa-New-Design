@@ -17,7 +17,7 @@ var swiper = new Swiper('.blog-slider', {
 
 // === CALENDAR SLIDER === //
 var CalendarSwiper = new Swiper('.calendar-slider', {
-	slidesPerView:'auto',
+	slidesPerView: 'auto',
 	spaceBetween: 20,
 	observer: true,
 	observeParents: true,
@@ -27,7 +27,7 @@ var CalendarSwiper = new Swiper('.calendar-slider', {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true,
-		dynamicBullets:true,
+		dynamicBullets: true,
 	},
 	navigation: {
 		prevEl: '.calendar-slider__nav-prev',
@@ -44,10 +44,10 @@ var CalendarSwiper = new Swiper('.calendar-slider', {
 			slidesPerView: 3,
 		},
 		1279.98: {
-			slidesPerView: 4,
+			slidesPerView: 3,
 		},
 		1600: {
-			slidesPerView: 5,
+			slidesPerView: 3,
 		},
 	}
 });
@@ -109,7 +109,7 @@ var BannerSwiper = new Swiper('.banner-slider', {
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.banner-slider__nav-prev',
@@ -118,23 +118,24 @@ var BannerSwiper = new Swiper('.banner-slider', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		679.98: {
 			slidesPerView: 2,
-		
+
 			//centeredSlides: false,
 		},
 		991.98: {
 			slidesPerView: 3,
-		
+
 		},
 	}
 });
 
 // === HEAD SLIDER === //
 var HeadSwiper = new Swiper('.head-slider', {
-	slidesPerView: 'auto',
+	//slidesPerView: 'auto',
+	slidesPerView: 1,
 	spaceBetween: 20,
 	observer: true,
 	observeParents: true,
@@ -143,7 +144,7 @@ var HeadSwiper = new Swiper('.head-slider', {
 	loop: true,
 	slideToClickedSlide: true,
 	autoHeight: true,
-	centeredSlides: true,
+	centeredSlides: false,
 	autoplay: {
 		delay: 12000,
 		stopOnLastSlide: false,
@@ -160,14 +161,14 @@ var HeadSwiper = new Swiper('.head-slider', {
 		type: 'bullets',
 		clickable: true,
 		//dynamicBullets:true,
-		
+
 	},
 	navigation: {
 		prevEl: '.head-slider__nav-prev',
 		nextEl: '.head-slider__nav-next',
 	}
 	// breakpoints: {
-	
+
 	// 	320: {
 	// 		slidesPerView: 1,
 	// 		spaceBetween: 20,
@@ -207,17 +208,17 @@ var GalerySwiper = new Swiper('.galery-slider', {
 		type: 'bullets',
 		clickable: true,
 		//dynamicBullets:true,
-		
+
 	},
 	navigation: {
 		prevEl: '.galery-slider__nav-prev',
 		nextEl: '.galery-slider__nav-next',
 	},
 	breakpoints: {
-	
+
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		599.98: {
 			slidesPerView: 2,
@@ -249,11 +250,11 @@ var PubMenuSwiper = new Swiper('.pub-menu-slider', {
 			slidesPerView: 1,
 			spaceBetween: 20,
 		},
-			470: {
+		470: {
 			slidesPerView: 2,
 			spaceBetween: 20,
 		},
-			690: {
+		690: {
 			slidesPerView: 3,
 			spaceBetween: 20,
 		},
@@ -292,11 +293,11 @@ var RosterMenuSwiper = new Swiper('.roster-menu-slider', {
 			slidesPerView: 1,
 			spaceBetween: 20,
 		},
-			509.98: {
+		509.98: {
 			slidesPerView: 2,
 			spaceBetween: 20,
 		},
-			749.98: {
+		749.98: {
 			slidesPerView: 3,
 			spaceBetween: 20,
 		},
@@ -332,13 +333,13 @@ var TeamLeadMenuSwiper = new Swiper('.team-lead-menu-slider', {
 		320: {
 			slidesPerView: 2,
 		},
-			449.98: {
+		449.98: {
 			slidesPerView: 3,
 		},
-			767.98: {
+		767.98: {
 			slidesPerView: 4,
 		},
-			991.98: {
+		991.98: {
 			slidesPerView: 5,
 		},
 		1199.98: {
@@ -372,15 +373,15 @@ var ClubHistoryMenuSwiper = new Swiper('.club-history-menu-slider', {
 			slidesPerView: 2,
 			//spaceBetween: 20,
 		},
-			449.98: {
+		449.98: {
 			slidesPerView: 3,
 			//spaceBetween: 20,
 		},
-			767.98: {
+		767.98: {
 			slidesPerView: 4,
 			//spaceBetween: 20,
 		},
-			991.98: {
+		991.98: {
 			slidesPerView: 5,
 			//spaceBetween: 20,
 		},
@@ -411,9 +412,9 @@ var TeamLeadGameSwiper1 = new Swiper('.team1-leaders-game-slider', {
 	centeredSlides: false,
 	//stopOnLastSlide: true,
 	//autoplay: {
-		//delay: 7000,
-		//stopOnLastSlide: false,
-		//disableOnInteraction: false,
+	//delay: 7000,
+	//stopOnLastSlide: false,
+	//disableOnInteraction: false,
 	//},
 	//loop: true,
 	//slideToClickedSlide: true,
@@ -422,21 +423,21 @@ var TeamLeadGameSwiper1 = new Swiper('.team1-leaders-game-slider', {
 		nextEl: '.team1-leaders-game-slider__nav-next',
 	},
 	//pagination: {
-		//el: '.swiper-pagination',
-		//type: 'bullets',
-		//clickable: true,
-		//dynamicBullets:true,
-		
+	//el: '.swiper-pagination',
+	//type: 'bullets',
+	//clickable: true,
+	//dynamicBullets:true,
+
 	//},
 	breakpoints: {
 
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		767.98: {
 			slidesPerView: 5,
-			
+
 		},
 	}
 });
@@ -451,9 +452,9 @@ var TeamLeadGameSwiper2 = new Swiper('.team2-leaders-game-slider', {
 	centeredSlides: false,
 	//stopOnLastSlide: true,
 	//autoplay: {
-		//delay: 7000,
-		//stopOnLastSlide: false,
-		//disableOnInteraction: false,
+	//delay: 7000,
+	//stopOnLastSlide: false,
+	//disableOnInteraction: false,
 	//},
 	//loop: true,
 	//slideToClickedSlide: true,
@@ -462,11 +463,11 @@ var TeamLeadGameSwiper2 = new Swiper('.team2-leaders-game-slider', {
 		nextEl: '.team2-leaders-game-slider__nav-next',
 	},
 	//pagination: {
-		//el: '.swiper-pagination',
-		//type: 'bullets',
-		//clickable: true,
-		//dynamicBullets:true,
-		
+	//el: '.swiper-pagination',
+	//type: 'bullets',
+	//clickable: true,
+	//dynamicBullets:true,
+
 	//},
 	breakpoints: {
 
@@ -488,7 +489,7 @@ var PersonMenuSwiper = new Swiper('.person-menu-slider', {
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
-   slideToClickedSlide: true,
+	slideToClickedSlide: true,
 	//freeMode: true,
 	//loop: true,
 	nested: true,
@@ -499,15 +500,15 @@ var PersonMenuSwiper = new Swiper('.person-menu-slider', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
-			349.98: {
+		349.98: {
 			slidesPerView: 2,
-			
+
 		},
-			559.98: {
+		559.98: {
 			slidesPerView: 3,
-			
+
 		},
 		767.98: {
 			slidesPerView: 4,
@@ -529,7 +530,7 @@ var MonthSwiper = new Swiper('.month-slider', {
 	slidesPerView: 1,
 	//slidesPerView: 3,
 	//spaceBetween: 20,
-	
+
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
@@ -552,7 +553,7 @@ var MonthSwiper = new Swiper('.month-slider', {
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.month-slider__nav-prev',
@@ -561,15 +562,15 @@ var MonthSwiper = new Swiper('.month-slider', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		767.98: {
 			slidesPerView: 1,
-		
+
 		},
 		991.98: {
 			slidesPerView: 1,
-		
+
 		},
 	}
 });
@@ -579,7 +580,7 @@ var DaySwiper = new Swiper('.day-slider', {
 	slidesPerView: 1,
 	//slidesPerView: 3,
 	//spaceBetween: 20,
-	
+
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
@@ -602,7 +603,7 @@ var DaySwiper = new Swiper('.day-slider', {
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.day-slider__nav-prev',
@@ -611,15 +612,15 @@ var DaySwiper = new Swiper('.day-slider', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		767.98: {
 			slidesPerView: 1,
-		
+
 		},
 		991.98: {
 			slidesPerView: 1,
-		
+
 		},
 	}
 });
@@ -646,8 +647,8 @@ var swiper = new Swiper('.video-slider', {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true,
-		dynamicBullets:true,
-		
+		dynamicBullets: true,
+
 	},
 	navigation: {
 		prevEl: '.video-slider__nav-prev',
@@ -656,16 +657,16 @@ var swiper = new Swiper('.video-slider', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		679.98: {
 			slidesPerView: 2,
-		
+
 			//centeredSlides: false,
 		},
 		991.98: {
 			slidesPerView: 3,
-		
+
 		},
 	}
 });
@@ -704,8 +705,8 @@ var TeamLeadersSwiper = new Swiper('.team-leaders-slider', {
 
 // === STORE SLIDER === //
 var StoreSwiper = new Swiper('.store-slider', {
-	slidesPerView:'auto',
-	
+	slidesPerView: 'auto',
+
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
@@ -719,7 +720,7 @@ var StoreSwiper = new Swiper('.store-slider', {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true,
-		dynamicBullets:true,
+		dynamicBullets: true,
 	},
 	navigation: {
 		prevEl: '.store-slider__nav-prev',
@@ -773,27 +774,27 @@ var swiper = new Swiper('.partners-slider', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
-			470: {
+		470: {
 			slidesPerView: 2,
-			
+
 		},
-			690: {
+		690: {
 			slidesPerView: 3,
-			
+
 		},
 		910: {
 			slidesPerView: 4,
-			
+
 		},
 		1140: {
 			slidesPerView: 5,
-			
+
 		},
 		1360: {
 			slidesPerView: 6,
-			
+
 		},
 	}
 });
@@ -823,7 +824,7 @@ var ClubPhotoRightSwiper = new Swiper('.club-photo-slider-right', {
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.pub-photo-slider-right__nav-prev',
@@ -832,15 +833,15 @@ var ClubPhotoRightSwiper = new Swiper('.club-photo-slider-right', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		767.98: {
 			slidesPerView: 1,
-		
+
 		},
 		991.98: {
 			slidesPerView: 1,
-		
+
 		},
 	}
 });
@@ -865,7 +866,7 @@ var PubPhotoLeftSwiper = new Swiper('.pub-photo-slider-left', {
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.pub-photo-slider-left__nav-prev',
@@ -874,9 +875,9 @@ var PubPhotoLeftSwiper = new Swiper('.pub-photo-slider-left', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
-		
+
 		749.98: {
 			slidesPerView: 1,
 		},
@@ -906,7 +907,7 @@ var PubPhotoRightSwiper = new Swiper('.pub-photo-slider-right', {
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.pub-photo-slider-right__nav-prev',
@@ -915,15 +916,15 @@ var PubPhotoRightSwiper = new Swiper('.pub-photo-slider-right', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		767.98: {
 			slidesPerView: 1,
-		
+
 		},
 		991.98: {
 			slidesPerView: 1,
-		
+
 		},
 	}
 });
@@ -936,7 +937,7 @@ var SidebarBannerSwiper = new Swiper('.sidebar-banner-slider', {
 	slidesPerView: 'auto',
 	//slidesPerView: 3,
 	spaceBetween: 16,
-	
+
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
@@ -945,19 +946,19 @@ var SidebarBannerSwiper = new Swiper('.sidebar-banner-slider', {
 	slideToClickedSlide: true,
 	//autoHeight: true,
 	//centeredSlides: true,
-	
+
 	autoplay: {
 		delay: 6000,
 		stopOnLastSlide: false,
 		disableOnInteraction: false,
 	},
-	
+
 	// pagination: {
 	// 	el: '.swiper-pagination',
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	//dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.sidebar-banner-slider__nav-prev',
@@ -979,12 +980,12 @@ var SidebarBannerSwiper = new Swiper('.sidebar-banner-slider', {
 			spaceBetween: 16,
 			direction: 'vertical',
 		},
-			1149.98: {
+		1149.98: {
 			slidesPerView: 4,
 			spaceBetween: 16,
 			direction: 'vertical',
 		},
-			1249.98: {
+		1249.98: {
 			slidesPerView: 3,
 			spaceBetween: 16,
 			direction: 'vertical',
@@ -994,7 +995,7 @@ var SidebarBannerSwiper = new Swiper('.sidebar-banner-slider', {
 
 // === SIDEBAR STORE SLIDER === //
 var swiper = new Swiper('.sidebar-store-slider', {
-	slidesPerView:'auto',
+	slidesPerView: 'auto',
 	spaceBetween: 20,
 	observer: true,
 	observeParents: true,
@@ -1007,11 +1008,11 @@ var swiper = new Swiper('.sidebar-store-slider', {
 		disableOnInteraction: false,
 	},
 	//pagination: {
-		//el: '.swiper-pagination',
-		//type: 'bullets',
-		//clickable: true,
-		//dynamicBullets:true,
-		
+	//el: '.swiper-pagination',
+	//type: 'bullets',
+	//clickable: true,
+	//dynamicBullets:true,
+
 	//},
 	navigation: {
 		prevEl: '.sidebar-store-slider__nav-prev',
@@ -1035,7 +1036,7 @@ var swiper = new Swiper('.sidebar-store-slider', {
 			slidesPerView: 1,
 			spaceBetween: 20,
 		},
-	
+
 	}
 });
 
@@ -1096,7 +1097,7 @@ var ScreenMenuSwiper = new Swiper('.big-screen-slider', {
 	// 	type: 'bullets',
 	// 	clickable: true,
 	// 	dynamicBullets:true,
-		
+
 	// },
 	navigation: {
 		prevEl: '.big-screen-slider__nav-prev',
@@ -1105,15 +1106,15 @@ var ScreenMenuSwiper = new Swiper('.big-screen-slider', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
+
 		},
 		767.98: {
 			slidesPerView: 1,
-		
+
 		},
 		991.98: {
 			slidesPerView: 1,
-		
+
 		},
 	}
 });

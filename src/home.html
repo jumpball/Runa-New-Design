@@ -15,23 +15,24 @@
 
 			<!-- HEAD SLIDER -->
 			<div class="first-section site-bg section-offset">
-				@@include('html/runa/_head-slider.htm',{})
+				<div class="head-slider__box section__container">
+					@@include('html/runa/_head-slider.htm',{})
+					@@include('html/runa/_pattern-game-card.htm',{})
+				</div>
 			</div>
 
 			<!-- CALENDAR SLIDER -->
-			<section class="site-bg-1 section-offset-border">
+			<section class="site-bg-1 section-offset">
 				<div class="section__container">
-					<!-- <h2 class="section-title section-title-h2 section-title-white element-animation">Ближайшие матчи</h2> -->
-					@@include('html/runa/_game-timer.htm',{})
+					<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+						Календарь</h2>
 					@@include('html/runa/_calendar-slider.htm',{})
-
 				</div>
 			</section>
 
 			<!-- BANNER SLIDER -->
 			<!--<div class="site-bg">
-				<div class="section__container">
-					 
+				<div class="section__container">				 
 				</div>
 			</div> -->
 
@@ -39,7 +40,8 @@
 			<section class="site-bg section-offset">
 				<div class="section__container">
 					<div class="title-block">
-						<h2 class="section-title section-title-h2 section-title-green element-animation">Новости</h2>
+						<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+							Новости клуба</h2>
 						<div class="publications-slider__navigation">
 							<div class="publications-slider__nav-prev -ibg">
 								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="стрелка назад">
@@ -53,20 +55,18 @@
 					<div class="pulications-slider__box">
 						@@include('html/runa/_net-to-slider.htm',{})
 					</div>
-					<!-- === BUTTON - ALL PUBLICATION === -->
-					<button type="button" class="pub-selector-button">лента новостей</button>
-
-				</div>
-				<div class="site-bg-img-1">
-					<img src="@img/RUNA/LOGO/runa-mini-green.svg" alt="">
+					<div class="button__box-center">
+						<!-- === BUTTON - ALL PUBLICATION === -->
+						<button type="button" class="pub-selector-button">все новости</button>
+					</div>
 				</div>
 			</section>
 
 			<!-- GENERAL PARTNER -->
 			<section class="site-bg-1 section-offset">
 				<div class="section__container">
-					<h2 class="section-title section-title-h2 section-title-white title-none-450 element-animation">
-						генеральный партнер</h2>
+					<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+						Генеральный партнер</h2>
 					<svg preserveAspectRatio="xMidYMid meet" data-bbox="9.7 389.8 980.6 220.3"
 						viewBox="9.7 389.8 980.6 220.3" xmlns="http://www.w3.org/2000/svg" data-type="color"
 						role="presentation" aria-hidden="true" aria-labelledby="svgcid--onmbq0pqaui1">
@@ -144,7 +144,8 @@
 			<section class="site-bg section-offset">
 				<div class="section__container">
 					<div class="title-block">
-						<h2 class="section-title section-title-h2 section-title-green element-animation">команды</h2>
+						<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+							Команды клуба</h2>
 						<div class="roster-menu-slider__navigation">
 							<div class="roster-menu-slider__nav-prev -ibg">
 								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="">
@@ -155,9 +156,6 @@
 						</div>
 					</div>
 					@@include('html/runa/_roster-selector.htm',{})
-				</div>
-				<div class="site-bg-img-1">
-					<img src="@img/RUNA/LOGO/runa-mini-green.svg" alt="">
 				</div>
 			</section>
 
@@ -195,7 +193,7 @@
 												for="select-tournament-1">Выбрать турнир</label>
 											<select data-label data-scroll data-show name="form[]" id="select-tournament-1"
 												class="nav-select__list">
-												<option class="nav-select__item" value="1" selected="selected">мужская суперлига
+												<option class="nav-select__item" value="1" selected="selected">Единая Лига ВТБ
 												</option>
 												<option class="nav-select__item" value="2">женская суперлига</option>
 												<option class="nav-select__item" value="3">молодежная Лига ВТБ</option>

@@ -36,15 +36,15 @@
 // = SITE BG = //
 .site-bg {
 	position: relative;
-	background-color: $bgColor_8;
+	background-color: $mainColor;
 }
-.site-bg::after {
-	content: "";
-	background-image: url("@img/RUNA/border/border-1-green.svg");
-	position: absolute;
-	width: 100%;
-	height: rem(20);
-}
+//.site-bg::after {
+//content: "";
+//background-image: url("@img/RUNA/border/border-1-green.svg");
+//position: absolute;
+//width: 100%;
+//height: rem(20);
+//}
 
 .site-bg-1 {
 	background-color: $color-base-1;

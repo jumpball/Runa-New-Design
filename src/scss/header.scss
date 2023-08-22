@@ -36,7 +36,7 @@
 			top: rem(20);
 			display: flex;
 			align-items: flex-start;
-			width: rem(132);
+			width: rem(145);
 			height: rem(40);
 			overflow: hidden;
 			transition: all 0.5s ease 0s;
@@ -44,24 +44,24 @@
 	}
 	&__logo-ball {
 		margin: 10px 0px 0px 0px;
-		width: rem(90);
-		height: rem(50.94);
+		width: rem(67.12);
+		height: rem(50);
 		transition: all 0.5s ease 0s;
 		@media (max-width: $tablet) {
 			margin: 0px 0px 0px 0px;
-			width: rem(70.67);
+			width: rem(53.7);
 			height: rem(40);
 			transition: all 0.5s ease 0s;
 		}
 	}
 	&__logo-text {
 		margin: 20px 0px 0px 0px;
-		width: rem(90);
-		height: rem(60.39);
+		width: rem(97.01);
+		height: rem(50);
 		transition: all 0.5s ease 0s;
 		@media (max-width: $tablet) {
-			margin: 0px 0px 0px 5px;
-			width: rem(59.61);
+			margin: 0px 0px 0px 10px;
+			width: rem(77.61);
 			height: rem(40);
 			transition: all 0.5s ease 0s;
 		}
@@ -76,14 +76,14 @@
 		transition: all 0.5s ease 0s;
 	}
 	&._header-scroll &__logo-ball {
-		width: rem(70.67);
+		width: rem(53.7);
 		height: rem(40);
 		margin: 0px 0px 0px 0px;
 		transition: all 0.5s ease 0s;
 	}
 	&._header-scroll &__logo-text {
-		margin: 0px 0px 0px 5px;
-		width: rem(59.61);
+		margin: 0px 0px 0px 10px;
+		width: rem(77.61);
 		height: rem(40);
 		transition: all 0.5s ease 0s;
 	}
@@ -323,7 +323,7 @@
 				background-color: $mainColor;
 				transition: all 0.5s ease 0s;
 				.header__menu-link {
-					color: $gold;
+					color: $color-base-3;
 				}
 				.header__menu-sub-list {
 					-webkit-transform: translate(0 0);
@@ -337,7 +337,7 @@
 					@media (any-hover: hover) {
 						&:hover {
 							.header__menu-sub-link {
-								color: $gold;
+								color: $color-base-3;
 							}
 						}
 					}
@@ -518,7 +518,7 @@
 	}
 }
 ._header-scroll.header::before {
-	background-color: $mainColor;
+	background-color: $color-base-2;
 	transition: all 0.5s ease 0s;
 	height: 100%;
 }
