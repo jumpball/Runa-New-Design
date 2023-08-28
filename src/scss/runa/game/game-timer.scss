@@ -86,7 +86,7 @@
 	&__time-item span {
 		padding: 0px 0px 8px 0px;
 		display: inline-block;
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		font-weight: 900;
 		@include adaptiveValue("font-size", 40, 23, 1600, 992, 1);
 		color: $gold;

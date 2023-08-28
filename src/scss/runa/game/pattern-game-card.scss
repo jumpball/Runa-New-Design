@@ -1,22 +1,24 @@
 // === PATTERN GAME CARD === //
 .pattern-game-card {
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: stretch;
 	padding: 20px 0px 30px 0px;
-	background-image: url("@img/RUNA/patterns/patterns-1.svg");
+	//background-color: $color-base-2;
+
+	//background: linear-gradient(126.34deg, #3f107d 24.19%, rgba(63, 16, 125, 0) 41.11%);
+	background-image: url("@img/RUNA/patterns/patterns-4.svg");
+	//background: linear-gradient(180deg, rgba(46, 0, 106, 0.6) 0%, rgba(46, 0, 106, 0) 100%);
 	background-size: cover;
 	background-blend-mode: multiply;
 	border-radius: rem(15);
 	overflow: hidden;
 	border: rem(1) solid $color-base-1;
-	margin-top: rem(140);
 	cursor: pointer;
-	@include adaptiveValue("margin-bottom", 30, 15, 1600, 600, 1);
 	transition: all 0.5s ease 0s;
-	@media (max-width: $tablet) {
-		margin-top: rem(55);
-	}
 
 	// = HOVER = //
 	&:hover {
@@ -33,18 +35,34 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	&__title {
+		font-weight: 700;
+		color: $white;
+		text-transform: uppercase;
+		@include adaptiveValue("font-size", 40, 18, 1920, 768, 1);
+		@include adaptiveValue("line-height", 56, 20, 1920, 768, 1);
+		@include adaptiveValue("letter-spacing", 3, 2, 1920, 768, 1);
+	}
+
 	&__subtitle {
 		width: fit-content;
 		background-color: $white;
-		margin: 30px 0px 20px 0px;
+		margin: 20px 0px 10px 0px;
 		padding: 8px 16px 8px 16px;
 		border-radius: rem(15);
+		display: flex;
+		@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
+		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 	}
 	&__subtitle-white {
 		width: fit-content;
 		background-color: $white;
-		margin: 30px 0px 20px 0px;
+		margin: 20px 0px 10px 0px;
 		padding: 8px 16px 8px 16px;
+		display: flex;
+		@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
+		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 		border-radius: rem(15);
 
 		p {
@@ -58,10 +76,10 @@
 		display: inline-block;
 		vertical-align: middle;
 		color: $color-base-2;
-		font-size: rem(18);
-		line-height: rem(24);
 		text-transform: uppercase;
 		font-weight: 400;
+		@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
+		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 	}
 
 	// = BORDERS = //
@@ -69,18 +87,21 @@
 		display: inline-block;
 		vertical-align: middle;
 		color: $color-base-1;
-		font-size: rem(12);
-		line-height: rem(24);
 		padding: 0px 5px 0px 5px;
+		@include adaptiveValue("font-size", 12, 8, 1920, 768, 1);
+		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 	}
 	&__x-border {
 		display: inline-block;
 		vertical-align: middle;
 		color: $white;
 		font-weight: 700;
-		font-size: rem(18);
-		line-height: rem(24);
+		@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
+		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 		padding: 0px 20px 0px 20px;
+		@media (max-width: $tablet) {
+			padding: 0px 8px 0px 8px;
+		}
 	}
 
 	// = SCORE = //
@@ -89,8 +110,8 @@
 		vertical-align: middle;
 		color: $white;
 		font-weight: 700;
-		font-size: rem(24);
-		line-height: rem(26);
+		@include adaptiveValue("font-size", 40, 20, 1920, 768, 1);
+		@include adaptiveValue("line-height", 56, 20, 1920, 768, 1);
 		padding: 0px 10px 0px 10px;
 	}
 	&__score-dark {
@@ -99,16 +120,25 @@
 
 	// = TEAMS = //
 	&__teams {
-		padding: 0px 20px 0px 20px;
+		padding: 0px 20px 10px 20px;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
+		@media (max-width: $tablet) {
+			padding: 0px 10px 10px 10px;
+		}
+		@media (max-width: rem(549.98)) {
+			justify-content: center;
+			gap: rem(10);
+		}
 	}
 
 	&__team-home,
 	&__team-away {
-		width: rem(110);
-		height: rem(110);
+		@include adaptiveValue("width", 130, 70, 1920, 768, 1);
+		@include adaptiveValue("height", 130, 70, 1920, 768, 1);
+		//width: rem(110);
+		//height: rem(110);
 		border-radius: rem(100);
 		background-color: $white;
 		overflow: hidden;
@@ -116,7 +146,7 @@
 
 	&__team-home img,
 	&__team-away img {
-		padding: 14px;
+		padding: 10px;
 	}
 
 	// = FOOTER = //
@@ -137,16 +167,18 @@
 		text-align: center;
 		span {
 			margin: 10px 0px 0px 0px;
-			font-size: 18px;
-			line-height: 24px;
+			@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
+			@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 		}
 	}
 	&__tournament-dark {
+		width: 100%;
 		color: $color-base-2;
+		text-align: center;
 		span {
 			margin: 10px 0px 0px 0px;
-			font-size: 18px;
-			line-height: 24px;
+			@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
+			@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 		}
 	}
 }

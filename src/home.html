@@ -17,39 +17,41 @@
 			<div class="first-section site-bg section-offset">
 				<div class="head-slider__box section__container">
 					@@include('html/runa/_head-slider.htm',{})
-					@@include('html/runa/_pattern-game-card.htm',{})
+					<div class="block-hidden-767">
+						@@include('html/runa/_pattern-game-card.htm',{})</div>
 				</div>
 			</div>
 
 			<!-- CALENDAR SLIDER -->
-			<section class="site-bg-1 section-offset">
+			<section class="site-bg section-offset">
 				<div class="section__container">
-					<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+					<h2 class="section-title section-title-h1 section-title-center section-title-white element-animation">
 						Календарь</h2>
 					@@include('html/runa/_calendar-slider.htm',{})
 				</div>
 			</section>
 
 			<!-- BANNER SLIDER -->
-			<!--<div class="site-bg">
-				<div class="section__container">				 
+			<div class="site-bg">
+				<div class="section__container">
+					@@include('html/runa/_banner-slider.htm',{})
 				</div>
-			</div> -->
+			</div>
 
 			<!-- PUBLICATION SELECTOR -->
 			<section class="site-bg section-offset">
 				<div class="section__container">
 					<div class="title-block">
-						<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+						<h2 class="section-title section-title-h1 section-title-center section-title-white element-animation">
 							Новости клуба</h2>
-						<div class="publications-slider__navigation">
+						<!-- <div class="publications-slider__navigation">
 							<div class="publications-slider__nav-prev -ibg">
 								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="стрелка назад">
 							</div>
 							<div class="publications-slider__nav-next -ibg">
 								<img src="@img/RUNA/icons/arrow-mini-right-green.svg" alt="стрелка вперед">
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<!-- === SLIDER - PUBLICATION CARDS === -->
 					<div class="pulications-slider__box">
@@ -57,13 +59,13 @@
 					</div>
 					<div class="button__box-center">
 						<!-- === BUTTON - ALL PUBLICATION === -->
-						<button type="button" class="pub-selector-button">все новости</button>
+						<button type="button" class="base-button cards-button grey-button">все новости</button>
 					</div>
 				</div>
 			</section>
 
 			<!-- GENERAL PARTNER -->
-			<section class="site-bg-1 section-offset">
+			<!--<section class="site-bg-1 section-offset">
 				<div class="section__container">
 					<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
 						Генеральный партнер</h2>
@@ -138,83 +140,28 @@
 						</g>
 					</svg>
 				</div>
-			</section>
+			</section>-->
 
-			<!-- TEAM ROSTERS -->
+
+
+			<!-- TEAM LEADERS -->
 			<section class="site-bg section-offset">
 				<div class="section__container">
 					<div class="title-block">
 						<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
-							Команды клуба</h2>
-						<div class="roster-menu-slider__navigation">
-							<div class="roster-menu-slider__nav-prev -ibg">
-								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="">
-							</div>
-							<div class="roster-menu-slider__nav-next -ibg">
-								<img src="@img/RUNA/icons/arrow-mini-right-green.svg" alt="">
-							</div>
-						</div>
+							лидеры</h2>
 					</div>
-					@@include('html/runa/_roster-selector.htm',{})
-				</div>
-			</section>
-
-			<!-- TEAM LEADERS -->
-			<section class="site-bg-1 section-offset-border">
-				<div class="section__container">
-					<h2 class="section-title section-title-h2 section-title-white element-animation">лидеры</h2>
-					<!-- SPOLLERS / NAV SELECT - 2 BOX -->
-					<div data-spollers="499.98,max" class="spollers spollers__box spollers__box-499">
-						<div class="spollers__item">
-							<button type="button" data-spoller class="spollers__title spollers__title-499 -ibg">
-								<img src="@img/RUNA/icons/icon-select-white.svg" alt="">
-							</button>
-							<div class="spollers__body">
-								<!-- NAV SELECT / 2 BOX -->
-								<!-- TEAM LEADERS - NAV / SELECT -->
-								<div class="nav-select__nav">
-									<!-- TEAM LEADERS - FORM / 2 BOXES -->
-									<form action="#" class="nav-select__form-2-box">
-										<!-- TEAM LEADERS - FORM - SELECT / INDEX -->
-										<div class="nav-select__box">
-											<label class="nav-select__label nav-select__label-white" for="select-index">Выбрать
-												показатель</label>
-											<select data-label data-scroll data-show name="form[]" id="select-index"
-												class="nav-select__list">
-												<option class="nav-select__item" value="1" selected="selected">очки</option>
-												<option class="nav-select__item" value="2">передачи</option>
-												<option class="nav-select__item" value="3">подборы</option>
-												<option class="nav-select__item" value="4">кпи</option>
-											</select>
-										</div>
-										<!-- TEAM LEADERS - FORM - SELECT / TOURNAMENT -->
-										<div class="nav-select__box">
-											<label class="nav-select__label nav-select__label-white"
-												for="select-tournament-1">Выбрать турнир</label>
-											<select data-label data-scroll data-show name="form[]" id="select-tournament-1"
-												class="nav-select__list">
-												<option class="nav-select__item" value="1" selected="selected">Единая Лига ВТБ
-												</option>
-												<option class="nav-select__item" value="2">женская суперлига</option>
-												<option class="nav-select__item" value="3">молодежная Лига ВТБ</option>
-												<option class="nav-select__item" value="4">ДЮБЛ юноши</option>
-												<option class="nav-select__item" value="5">ДЮБЛ девушки</option>
-												<option class="nav-select__item" value="6">UBA</option>
-											</select>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-					@@include('html/runa/_team-leaders.htm',{})
+					@@include('html/runa/_leaders-selector.htm',{})
 				</div>
 			</section>
 
 			<!-- MEDIA MAIN -->
 			<section class="site-bg section-offset">
 				<div class="section__container">
-					<h2 class="section-title section-title-h2 section-title-green element-animation">медиа</h2>
+					<div class="title-block">
+						<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+							медиа</h2>
+					</div>
 					@@include('html/runa/_tabs-video.htm',{})
 				</div>
 				<div class="section__container">
@@ -241,7 +188,7 @@
 			</section>
 
 			<!-- STORE -->
-			<section class="site-bg-1 section-offset-border">
+			<section class="site-bg section-offset">
 				<div class="section__container">
 					<div class="title-block">
 						<h2 class="section-title section-title-h2 section-title-white element-animation">магазин</h2>
@@ -371,6 +318,25 @@
 					<div class="button__box-center">
 						<button type="button" class="store-button">магазин</button>
 					</div>
+				</div>
+			</section>
+
+			<!-- TEAM ROSTERS -->
+			<section class="site-bg section-offset">
+				<div class="section__container">
+					<div class="title-block">
+						<h2 class="section-title section-title-h1 section-title-white section-title-center element-animation">
+							Команды клуба</h2>
+						<!-- <div class="roster-menu-slider__navigation">
+							<div class="roster-menu-slider__nav-prev -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-left-green.svg" alt="">
+							</div>
+							<div class="roster-menu-slider__nav-next -ibg">
+								<img src="@img/RUNA/icons/arrow-mini-right-green.svg" alt="">
+							</div>
+						</div> -->
+					</div>
+					@@include('html/runa/_roster-selector.htm',{})
 				</div>
 			</section>
 

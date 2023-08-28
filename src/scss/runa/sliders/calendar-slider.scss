@@ -11,7 +11,7 @@
 	&__box-club {
 		position: relative;
 		.game-mini-card {
-			border: rem(1) solid $sa_silver;
+			border: rem(1) solid $color-base-1;
 			&:hover {
 				transition: all 0.5s ease 0s;
 				.game-mini-card__header {
@@ -108,9 +108,9 @@
 		}
 	}
 	.swiper-pagination-bullet {
-		width: rem(14);
-		height: rem(14);
-		line-height: rem(20);
+		width: rem(10);
+		height: rem(10);
+		line-height: rem(16);
 		background-color: $color-base-3;
 		border: rem(1) solid $color-base-4;
 	}

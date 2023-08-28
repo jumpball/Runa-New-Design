@@ -35,20 +35,22 @@ var CalendarSwiper = new Swiper('.calendar-slider', {
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 2,
+			slidesPerView: 1.1,
+			spaceBetween: 10,
 		},
-		650: {
-			slidesPerView: 2,
+		549.98: {
+			slidesPerView: 2.1,
+			spaceBetween: 10,
 		},
-		950: {
+		767.98: {
 			slidesPerView: 3,
+			spaceBetween: 10,
 		},
-		1279.98: {
+		991.98: {
 			slidesPerView: 3,
+			spaceBetween: 20,
 		},
-		1600: {
-			slidesPerView: 3,
-		},
+
 	}
 });
 
@@ -88,8 +90,8 @@ var CalendarSwiper = new Swiper('.calendar-slider', {
 
 // === BANNER SLIDER === //
 var BannerSwiper = new Swiper('.banner-slider', {
-	slidesPerView: 'auto',
-	//slidesPerView: 3,
+	//slidesPerView: 'auto',
+	slidesPerView: 1,
 	spaceBetween: 20,
 	observer: true,
 	observeParents: true,
@@ -115,27 +117,27 @@ var BannerSwiper = new Swiper('.banner-slider', {
 		prevEl: '.banner-slider__nav-prev',
 		nextEl: '.banner-slider__nav-next',
 	},
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
+	//breakpoints: {
+	//320: {
+	//	slidesPerView: 1,
 
-		},
-		679.98: {
-			slidesPerView: 2,
+	//},
+	//679.98: {
+	//	slidesPerView: 2,
 
-			//centeredSlides: false,
-		},
-		991.98: {
-			slidesPerView: 3,
+	//centeredSlides: false,
+	//},
+	//991.98: {
+	//	slidesPerView: 3,
 
-		},
-	}
+	//},
+	//}
 });
 
 // === HEAD SLIDER === //
 var HeadSwiper = new Swiper('.head-slider', {
-	//slidesPerView: 'auto',
-	slidesPerView: 1,
+	slidesPerView: 'auto',
+	//slidesPerView: 1,
 	spaceBetween: 20,
 	observer: true,
 	observeParents: true,
@@ -166,18 +168,17 @@ var HeadSwiper = new Swiper('.head-slider', {
 	navigation: {
 		prevEl: '.head-slider__nav-prev',
 		nextEl: '.head-slider__nav-next',
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			//spaceBetween: 20,
+		},
+		1160: {
+			slidesPerView: 1,
+			//spaceBetween: 20,
+		},
 	}
-	// breakpoints: {
-
-	// 	320: {
-	// 		slidesPerView: 1,
-	// 		spaceBetween: 20,
-	// 	},
-	// 	1160: {
-	// 		slidesPerView: 3,
-	// 		spaceBetween: 20,
-	// 	},
-	// }
 });
 
 // === GALERY SLIDER === //
@@ -277,11 +278,11 @@ var PubMenuSwiper = new Swiper('.pub-menu-slider', {
 var RosterMenuSwiper = new Swiper('.roster-menu-slider', {
 	slidesPerView: 'auto',
 	//slidesPerView: 6,
-	spaceBetween: 20,
+	spaceBetween: 10,
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
-
+	centeredSlides: false,
 	//freeMode: true,
 	nested: true,
 	navigation: {
@@ -290,29 +291,50 @@ var RosterMenuSwiper = new Swiper('.roster-menu-slider', {
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 1,
-			spaceBetween: 20,
+			slidesPerView: 1.1,
+			spaceBetween: 10,
 		},
 		509.98: {
-			slidesPerView: 2,
-			spaceBetween: 20,
+			slidesPerView: 2.1,
+			spaceBetween: 10,
 		},
 		749.98: {
 			slidesPerView: 3,
-			spaceBetween: 20,
+			spaceBetween: 10,
 		},
-		1049.98: {
-			slidesPerView: 4,
-			spaceBetween: 20,
+
+	}
+});
+
+// === LEADERS MENU === //
+var LeadersMenuSwiper = new Swiper('.leaders-menu-slider', {
+	slidesPerView: 'auto',
+	//slidesPerView: 6,
+	spaceBetween: 10,
+	observer: true,
+	observeParents: true,
+	observeSlideChildren: true,
+	centeredSlides: false,
+	//freeMode: true,
+	nested: true,
+	navigation: {
+		prevEl: '.leaders-menu-slider__nav-prev',
+		nextEl: '.leaders-menu-slider__nav-next',
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1.1,
+			spaceBetween: 10,
 		},
-		1299.98: {
-			slidesPerView: 5,
-			spaceBetween: 20,
+		509.98: {
+			slidesPerView: 2.1,
+			spaceBetween: 10,
 		},
-		1499.98: {
-			slidesPerView: 6,
-			spaceBetween: 20,
+		749.98: {
+			slidesPerView: 3,
+			spaceBetween: 10,
 		},
+
 	}
 });
 

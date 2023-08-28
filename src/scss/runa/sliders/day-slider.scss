@@ -37,7 +37,7 @@
 		text-transform: uppercase;
 		font-weight: 900;
 		//font-size: rem(80);
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 
 		@include adaptiveValue("font-size", 70, 60, 1600, 768, 1);
 		@include adaptiveValue("line-height", 74, 62, 1600, 768, 1);
@@ -48,7 +48,7 @@
 		}
 	}
 	//&__title span {
-	//font-family: "Oswald", sans-serif;
+	//font-family: $fontFamily;
 	//@include adaptiveValue("font-size", 38, 22, 1600, 768, 1);
 	//}
 	&__subtitle {

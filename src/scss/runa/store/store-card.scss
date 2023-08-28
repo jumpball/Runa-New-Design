@@ -58,7 +58,7 @@
 		h3 {
 			color: $gold;
 			display: inline-block;
-			font-family: "Oswald", sans-serif;
+			font-family: $fontFamily;
 			font-size: rem(30);
 			@media (max-width: rem(549.98)) {
 				font-size: rem(24);
@@ -84,7 +84,7 @@
 
 		span {
 			display: inline-block;
-			font-family: "Oswald", sans-serif;
+			font-family: $fontFamily;
 			font-size: rem(30);
 			@media (max-width: rem(549.98)) {
 				font-size: rem(24);

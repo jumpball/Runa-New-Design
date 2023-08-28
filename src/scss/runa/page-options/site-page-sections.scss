@@ -10,8 +10,8 @@
 	margin-top: -20px;
 }
 .section-offset {
-	@include adaptiveValue("padding-top", 50, 40, 1600, 991.98, 1);
-	@include adaptiveValue("padding-bottom", 30, 24, 1600, 991.98, 1);
+	@include adaptiveValue("padding-top", 50, 20, 1600, 767.98, 1);
+	@include adaptiveValue("padding-bottom", 30, 20, 1600, 767.98, 1);
 }
 .section-offset-border {
 	@include adaptiveValue("padding-top", 30, 20, 1600, 991.98, 1);

@@ -90,7 +90,7 @@
 				transition: all 0.5s ease 0s;
 				transform: scale(1.02);
 				box-shadow: $shadow-2;
-				border: rem(1) solid $sa_silver;
+				border: rem(1) solid $color-base-1;
 				border-radius: rem(3);
 				.game-card-calendar__tournament-logo {
 					opacity: 1;
@@ -142,7 +142,7 @@
 		.month-calendar__day-header {
 			//background-color: #eef0f2;
 			background-color: $bgColor_9;
-			border: rem(1) solid $sa_silver;
+			border: rem(1) solid $color-base-1;
 		}
 		.month-calendar__date,
 		.month-calendar__week-day {
@@ -161,7 +161,7 @@
 		width: 100%;
 		padding: 0.3125rem;
 		background-color: #f0f8ff;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 		border-radius: rem(3);
 		@media (max-width: rem(991.98)) {
 			height: 100%;
@@ -174,7 +174,7 @@
 		text-align: end;
 		font-size: rem(30);
 		font-weight: 900;
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		color: $color-base-1;
 	}
 

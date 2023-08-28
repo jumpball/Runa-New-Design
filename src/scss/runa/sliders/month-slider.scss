@@ -44,7 +44,7 @@
 		@include adaptiveValue("font-size", 24, 20, 767.98, 430, 1);
 	}
 	&__title span {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		@include adaptiveValue("font-size", 38, 22, 1600, 768, 1);
 	}
 

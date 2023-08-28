@@ -75,7 +75,7 @@
 		text-align: right;
 		display: flex;
 		justify-content: space-between;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 		border-radius: rem(3);
 
 		@media (max-width: $mobile) {
@@ -86,7 +86,7 @@
 	&__item-right {
 		color: $mainColor;
 		background-color: $white;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 		border-radius: rem(3);
 		text-align: left;
 		display: flex;
@@ -139,7 +139,7 @@
 		@include adaptiveValue("width", 120, 100, 1600, 1250, 1);
 		@include adaptiveValue("height", 120, 100, 1600, 1250, 1);
 		border-radius: 100%;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 		margin: rem(6);
 		overflow: hidden;
 		background-color: $white;
@@ -283,7 +283,7 @@
 		}
 	}
 	&__item-title-bg span {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 	}
 	&__item-title-bg-left {
 		right: 0;
@@ -339,7 +339,7 @@
 	// = NUM = //
 	&__num {
 		color: $color-base-1;
-		//font-family: "Oswald", sans-serif;
+		//font-family: $fontFamily;
 		font-weight: 900;
 	}
 
@@ -381,17 +381,17 @@
 	}
 
 	&__item-event-score {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		color: $white;
 		background-color: $mia_red;
 		border: rem(1) solid $white;
 	}
 
 	&__item-event-time {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		color: $mainColor;
 		background-color: $bgColor_2;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 	}
 
 	&__item-event-info {

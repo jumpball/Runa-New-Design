@@ -10,7 +10,7 @@
 		gap: rem(20);
 		.player-card-vh-slider {
 			border-radius: rem(3);
-			border: rem(1) solid $sa_silver;
+			border: rem(1) solid $color-base-1;
 		}
 		.player-card-vh-slider__image {
 			filter: none;
@@ -94,7 +94,7 @@
 	// .team-leaders-game__team-score
 
 	&__team-score {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		font-size: rem(68);
 		font-weight: 900;
 		position: absolute;
@@ -170,7 +170,7 @@
 	// .team-leaders-game__team-score
 
 	&__team-score {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		font-size: rem(68);
 		font-weight: 900;
 		position: absolute;

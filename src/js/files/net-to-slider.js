@@ -35,7 +35,7 @@
 
 //   if (window.innerWidth > MOBILE_BREAKPOINT) {
 //     slider.dataset.mobile = 'false';
-    
+
 //     if (slider.classList.contains('swiper-container-initialized')) {
 //       publicationsSwiper.destroy();
 //     }
@@ -56,42 +56,43 @@ const slider = document.querySelector('.publications-slider');
 let publicationsSwiper = null;
 
 function initSwiper() {
-  const MOBILE_BREAKPOINT = 949.98;
-  if (window.innerWidth <= MOBILE_BREAKPOINT && slider && slider.dataset.mobile === 'false') {
-    publicationsSwiper = new Swiper(slider, {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      observer: true,
-      observeParents: true,
-      observeSlideChildren: true,
-      navigation: {
-        prevEl: '.publications-slider__nav-prev',
-        nextEl: '.publications-slider__nav-next',
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        649.98: {
-          slidesPerView: 2,
-        },
-        [MOBILE_BREAKPOINT]: {
-          slidesPerView: 3,
-        },
-      }
-    });
-    
-    slider.dataset.mobile = 'true';
-  } else if (publicationsSwiper) {
-    publicationsSwiper.destroy();
-    slider.dataset.mobile = 'false';
-  }
+	const MOBILE_BREAKPOINT = 949.98;
+	if (window.innerWidth <= MOBILE_BREAKPOINT && slider && slider.dataset.mobile === 'false') {
+		publicationsSwiper = new Swiper(slider, {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			observer: true,
+			observeParents: true,
+			observeSlideChildren: true,
+			navigation: {
+				prevEl: '.publications-slider__nav-prev',
+				nextEl: '.publications-slider__nav-next',
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1.1,
+				},
+
+				549.98: {
+					slidesPerView: 2.1,
+				},
+				[MOBILE_BREAKPOINT]: {
+					slidesPerView: 2.2,
+				},
+			}
+		});
+
+		slider.dataset.mobile = 'true';
+	} else if (publicationsSwiper) {
+		publicationsSwiper.destroy();
+		slider.dataset.mobile = 'false';
+	}
 }
 
 initSwiper();
 
 window.addEventListener('load', () => {
-  initSwiper();
+	initSwiper();
 });
 
 const resizeObserver = new ResizeObserver(initSwiper);

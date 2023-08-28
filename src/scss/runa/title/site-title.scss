@@ -6,9 +6,9 @@
 	font-weight: 900;
 	letter-spacing: rem(2);
 	text-transform: uppercase;
-	padding: 20px 0px 10px 0px;
-	//@include adaptiveValue("padding-top", 20, 0, 991.98, 500, 1);
-	//@include adaptiveValue("padding-botom", 20, 0, 991.98, 500, 1);
+	//padding: 20px 0px 10px 0px;
+	@include adaptiveValue("padding-top", 20, 10, 991.98, 500, 1);
+	@include adaptiveValue("padding-botom", 10, 6, 991.98, 500, 1);
 }
 .section-title span {
 	letter-spacing: rem(1);
@@ -48,19 +48,19 @@
 
 // = TITLE-BLOCK = //
 .title-block {
-	margin: 30px 0px 0px 0px;
+	//margin: 30px 0px 0px 0px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	@media (max-width: rem(539.98)) {
-		margin: 10px 0px 0px 0px;
+		//margin: 10px 0px 0px 0px;
 	}
 }
 
 // = SECTION TITLE - SIZE = //
 .section-title-h1 {
-	@include adaptiveValue("font-size", 46, 22, 991.98, 600, 1);
+	@include adaptiveValue("font-size", 46, 26, 991.98, 600, 1);
 	@include adaptiveValue("line-height", 50, 30, 991.98, 600, 1);
 }
 .section-title-h2 {

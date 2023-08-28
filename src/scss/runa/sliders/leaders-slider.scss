@@ -1,0 +1,50 @@
+// === LEADERS SLIDER === //
+.leaders-slider {
+	//width: 100%;
+	//@include adaptiveValue("margin-top", 20, 10, 1050, 600, 1);
+
+	// === WRAPPER === //
+	&__wrapper {
+	}
+
+	// === ITEM === //
+	&__item {
+		width: 100%;
+		height: fit-content;
+		//border: rem(1) solid $color-base-1;
+		border-radius: rem(15);
+		overflow: hidden;
+	}
+
+	// === NAVIGATION & PAGINATION === //
+
+	&__navigation {
+	}
+
+	&__nav-prev {
+	}
+
+	&__nav-next {
+	}
+	&__pagination {
+	}
+
+	.swiper-pagination {
+		//display: none;
+		position: relative;
+		margin-top: rem(30);
+		@media (max-width: rem(767.98)) {
+			display: none;
+		}
+	}
+	.swiper-pagination-bullet {
+		width: rem(10);
+		height: rem(10);
+		line-height: rem(16);
+		background-color: $color-base-3;
+		border: rem(1) solid $color-base-4;
+	}
+	// === SLIDE-ACTIVE === //
+	.swiper-slide-active {
+	}
+}

@@ -75,7 +75,7 @@
 	&__content {
 		background-color: $white;
 		position: relative;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 		border-radius: rem(3);
 		padding: rem(12);
 	}
@@ -84,7 +84,7 @@
 	&__date {
 		position: absolute;
 		display: inline-block;
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		@include adaptiveValue("top", -50, -30, 1600, 600, 1);
 		@include adaptiveValue("font-size", 36, 24, 1600, 600, 1);
 		@include adaptiveValue("line-height", 48, 30, 1600, 600, 1);

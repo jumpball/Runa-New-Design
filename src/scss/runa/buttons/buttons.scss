@@ -1,6 +1,6 @@
 // === BUTTON BOX === //
 .button__box-center {
-	margin: 20px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,13 +41,19 @@
 	}
 }
 .cards-button {
-	height: rem(56);
-	min-width: rem(250);
-	padding: 16px 32px 16px 32px;
-	border-radius: 15px 0px 15px 0px;
+	display: flex;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
 	gap: 10px;
-	line-height: rem(24);
-	font-size: rem(22);
+
+	height: rem(56);
+	//min-width: rem(220);
+	@include adaptiveValue("min-width", 220, 190, 1920, 768, 1);
+	padding: 16px 32px;
+	border-radius: 15px 0px 15px 0px;
+	@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
+	@include adaptiveValue("line-height", 24, 20, 1920, 768, 1);
 	font-weight: 700;
 }
 
@@ -78,35 +84,62 @@
 }
 // = RST SELECTOR BUTTON = //
 .rst-selector-button {
-	margin: 20px 0px 20px 0px;
-	display: inline-flex;
+	display: flex;
 	width: 100%;
-	font-size: rem(15);
-	background-color: $color-base-4;
-	padding: rem(25) rem(35);
-	border-radius: 0px rem(15) 0px rem(15);
-	min-width: 205px;
-	color: $white;
-	//border: rem(1) solid $sa_silver;
-	text-decoration: none;
-	font-weight: 500;
 	justify-content: center;
-	text-align: center;
-	letter-spacing: 1px;
-	cursor: pointer;
+	align-items: center;
+	height: rem(56);
+	@include adaptiveValue("min-width", 250, 220, 1920, 768, 1);
+	padding: 16px 32px;
+	border-radius: 15px;
+	@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
+	@include adaptiveValue("line-height", 24, 20, 1920, 768, 1);
+	font-weight: 700;
 	text-transform: uppercase;
-	white-space: nowrap;
+	color: $white;
+	background-color: $color-base-6;
+	transition: all 0.5s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $color-base-2;
-			color: $white;
+			background-color: $color-base-1;
+			color: $color-base-4;
 			transition: all 0.5s ease 0s;
 		}
 	}
 }
 .rst-selector-button-active {
-	background-color: $color-base-1;
+	background-color: $color-base-4;
+	color: $color-base-1;
+}
+
+// = LDR SELECTOR BUTTON = //
+.ldr-selector-button {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: rem(56);
+	@include adaptiveValue("min-width", 250, 220, 1920, 768, 1);
+	padding: 16px 32px;
+	border-radius: 15px;
+	@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
+	@include adaptiveValue("line-height", 24, 20, 1920, 768, 1);
+	font-weight: 700;
+	text-transform: uppercase;
 	color: $white;
+	background-color: $color-base-6;
+	transition: all 0.5s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $color-base-1;
+			color: $color-base-4;
+			transition: all 0.5s ease 0s;
+		}
+	}
+}
+.ldr-selector-button-active {
+	background-color: $color-base-4;
+	color: $color-base-1;
 }
 
 // = TEAM LEAD SELECTOR BUTTON = //
@@ -120,7 +153,7 @@
 	border-radius: rem(3);
 	//min-width: 205px;
 	color: $color-base-1;
-	border: rem(1) solid $sa_silver;
+	border: rem(1) solid $color-base-1;
 	text-decoration: none;
 	font-weight: 500;
 	justify-content: center;
@@ -155,14 +188,14 @@
 	//margin: 20px 0px 20px 0px;
 	display: inline-flex;
 	width: 100%;
-	font-family: "Oswald", sans-serif;
+	font-family: $fontFamily;
 	font-size: rem(15);
 	background-color: $white;
 	padding: rem(22) rem(30);
 	border-radius: rem(3);
 
 	color: $color-base-1;
-	border: rem(1) solid $sa_silver;
+	border: rem(1) solid $color-base-1;
 	text-decoration: none;
 	font-weight: 500;
 	justify-content: center;
@@ -205,7 +238,7 @@
 	border-radius: 0px rem(15) 0px rem(15);
 	min-width: 250px;
 	color: $color-base-3;
-	//border: rem(1) solid $sa_silver;
+	//border: rem(1) solid $color-base-1;
 	text-decoration: none;
 	//font-weight: 500;
 	justify-content: center;
@@ -216,8 +249,8 @@
 	white-space: nowrap;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $color-base-2;
-			color: $white;
+			background-color: $color-base-1;
+			color: $color-base-4;
 			transition: all 0.5s ease 0s;
 		}
 	}
@@ -239,7 +272,7 @@
 	border-radius: rem(3);
 	min-width: 205px;
 	color: $color-base-1;
-	border: rem(1) solid $sa_silver;
+	border: rem(1) solid $color-base-1;
 	text-decoration: none;
 	font-weight: 500;
 	justify-content: center;
@@ -291,7 +324,7 @@
 
 // === BUTTONS COLORS === //
 .green-button {
-	color: $white;
+	color: $color-base-2;
 	background-color: $color-base-4;
 	transition: all 0.5s ease 0s;
 	@media (any-hover: hover) {
@@ -303,11 +336,11 @@
 }
 .purple-button {
 	color: $white;
-	background-color: $color-base-1;
+	background-color: $color-base-2;
 	transition: all 0.5s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $color-base-2;
+			background-color: $color-base-1;
 			transition: all 0.5s ease 0s;
 		}
 	}
@@ -356,6 +389,19 @@
 		&:hover {
 			background-color: $mainColor;
 			color: $gold;
+			transition: all 0.5s ease 0s;
+		}
+	}
+}
+
+.grey-button {
+	color: $white;
+	background-color: $color-base-6;
+	transition: all 0.5s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $color-base-1;
+			color: $color-base-4;
 			transition: all 0.5s ease 0s;
 		}
 	}

@@ -43,7 +43,7 @@
 		}
 		h3 {
 			display: inline-block;
-			font-family: "Oswald", sans-serif;
+			font-family: $fontFamily;
 			font-size: rem(30);
 			@media (max-width: rem(549.98)) {
 				font-size: rem(24);
@@ -217,7 +217,7 @@
 
 	// = SCORE = //
 	&__team-score {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		text-align: end;
 		min-width: rem(38);
 		font-size: rem(20);

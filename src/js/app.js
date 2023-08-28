@@ -194,6 +194,7 @@ import './libs/wNumb.min.js';
 import "./files/script.js";
 import "./files/publication-selector.js";
 import "./files/roster-selector.js";
+import "./files/leaders-selector.js"
 import "./files/team-lead-selector.js";
 import "./files/blog-slider.js";
 import "./files/tabs-slider.js";

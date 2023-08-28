@@ -51,7 +51,7 @@
 		height: rem(259);
 		width: rem(437);
 		margin: 0px 0px 20px 0px;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 		border-radius: rem(3);
 		@media (max-width: rem(1099)) {
 			width: 100%;
@@ -154,7 +154,7 @@
 	// = DATE = //
 	&__date {
 		width: 100%;
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
@@ -170,7 +170,7 @@
 		font-weight: 700;
 		line-height: 1.6;
 		span {
-			font-family: "Oswald", sans-serif;
+			font-family: $fontFamily;
 		}
 		@media (max-width: rem(649.98)) {
 			@include adaptiveValue("font-size", 24, 22, 649.98, 340, 1);

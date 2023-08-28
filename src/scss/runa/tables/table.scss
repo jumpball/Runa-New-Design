@@ -202,7 +202,7 @@
 	}
 	&__block .digital-font {
 		font-size: rem(18);
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		font-weight: 900;
 		letter-spacing: rem(1.2);
 		@media (max-width: rem(649.98)) {

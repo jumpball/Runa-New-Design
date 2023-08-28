@@ -5,8 +5,8 @@
 	top: 0;
 	left: 0;
 	z-index: 99;
-	background-color: $color-base-1;
-	border-bottom: rem(1) solid $white;
+	background-color: $color-base-2;
+	border-bottom: rem(1) solid $color-base-1;
 
 	// === HEADER CONTAINER === //
 	&__container {
@@ -41,6 +41,9 @@
 			overflow: hidden;
 			transition: all 0.5s ease 0s;
 		}
+		@media (max-width: rem(499.98)) {
+			width: rem(60);
+		}
 	}
 	&__logo-ball {
 		margin: 10px 0px 0px 0px;
@@ -65,6 +68,9 @@
 			height: rem(40);
 			transition: all 0.5s ease 0s;
 		}
+		@media (max-width: rem(499.98)) {
+			display: none;
+		}
 	}
 	&._header-scroll &__logo {
 		top: rem(20);
@@ -74,6 +80,9 @@
 		height: rem(40);
 		overflow: hidden;
 		transition: all 0.5s ease 0s;
+		@media (max-width: rem(499.98)) {
+			width: rem(60);
+		}
 	}
 	&._header-scroll &__logo-ball {
 		width: rem(53.7);
@@ -122,18 +131,46 @@
 	}
 
 	// === HEADER FORM === //
+	&__form-line {
+		//@media (max-width: rem(499.98)) {
+		//width: rem(40);
+		//}
+	}
+
 	&__form {
+		@media (max-width: $tablet) {
+			//height: 0px;
+			transition: all 0.5s ease 0s;
+			position: absolute;
+			top: rem(15);
+			right: 0;
+			margin: 0px 50px 0px 0px;
+		}
+		@media (max-width: rem(499.98)) {
+			margin: 0px -10px 0px 0px;
+		}
+
 		transition: all 0.5s ease 0s;
 		.select__title {
+			transition: all 0.5s ease 0s;
 			background-color: $mainColor;
 			border: none;
 			height: auto;
 		}
 	}
+	&._header-scroll .select__title {
+		transition: all 0.5s ease 0s;
+		background-color: $color-base-2;
+	}
 	&._header-scroll &__form {
-		@media (min-width: $tablet) {
-			height: 0px;
-			transition: all 0.5s ease 0s;
+		display: none;
+		//height: 0px;
+		//margin: 0px 50px 0px 0px;
+		@media (max-width: $tablet) {
+			margin: 0px 50px 0px 0px;
+		}
+		@media (max-width: rem(499.98)) {
+			margin: 0px -10px 0px 0px;
 		}
 	}
 
@@ -141,8 +178,8 @@
 		position: relative;
 		width: rem(40);
 		height: rem(40);
-		margin: 0px 0px 0px rem(30);
-		color: $white;
+		//margin: 0px 0px 0px rem(30);
+		color: $color-base-4;
 		padding: rem(5) 0px;
 		letter-spacing: rem(3);
 		text-align: center;
@@ -152,7 +189,7 @@
 		z-index: 3;
 		transition: all 0.5s ease 0s;
 		@media (max-width: $tablet) {
-			margin: 0px rem(60) 0px 0px;
+			margin: 0px rem(50) 0px 0px;
 		}
 	}
 	&__form-select-lang {
@@ -160,7 +197,7 @@
 			border: none;
 		}
 		.select__title {
-			color: $white;
+			color: $color-base-4;
 		}
 	}
 	&._header-scroll &__form-select-lang {
@@ -276,6 +313,15 @@
 	}
 
 	// === HEADER MENU === //
+	&__menu-box {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		@media (max-width: $tablet) {
+			width: 100%;
+			justify-content: center;
+		}
+	}
 	&__menu {
 		@media (max-width: $tablet) {
 			position: fixed;
@@ -293,7 +339,21 @@
 			}
 		}
 	}
-
+	&__tickets-btn {
+		color: $color-base-2;
+		font-size: rem(16);
+		line-height: rem(30);
+		text-transform: uppercase;
+		padding: 0px 18px;
+		margin: 0px 0px 0px 10px;
+		background-image: url("@img/RUNA/patterns/ticket.svg");
+		background-size: contain;
+		z-index: 2;
+		//background-blend-mode: multiply;
+		@media (max-width: $tablet) {
+			margin: 0px 0px 0px 0px;
+		}
+	}
 	// = MENU LIST = //
 	&__menu-list {
 		display: flex;
@@ -405,10 +465,10 @@
 		position: relative;
 		background-color: $mainColor;
 		padding: 16px 0px 16px 0px;
-		border-right: rem(1) solid $white;
-		border-left: rem(1) solid $white;
-		border-bottom: rem(1) solid $white;
-		border-radius: 0px 0px rem(3) rem(3);
+		border-right: rem(1) solid $color-base-1;
+		border-left: rem(1) solid $color-base-1;
+		border-bottom: rem(1) solid $color-base-1;
+		border-radius: 0px 0px rem(15) rem(15);
 		text-transform: uppercase;
 		font-size: rem(18);
 		line-height: rem(50);
@@ -447,7 +507,7 @@
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				background-color: $color-base-1;
+				background-color: $color-base-2;
 			}
 		}
 	}
@@ -475,7 +535,7 @@
 		}
 	}
 	&__menu-sub-link.active {
-		color: $gold;
+		color: $color-base-4;
 		@media (max-width: rem(991.98)) {
 			background-color: transparent;
 		}

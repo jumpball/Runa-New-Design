@@ -51,7 +51,7 @@
 		position: absolute;
 		left: rem(20);
 		bottom: 0;
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		font-size: rem(140);
 		font-weight: 900;
 		color: $white;
@@ -285,7 +285,7 @@
 	}
 
 	&__digit {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		@include adaptiveValue("font-size", 50, 40, 1600, 767.98, 1);
 		@include adaptiveValue("line-height", 52, 42, 1600, 767.98, 1);
 		font-weight: 900;

@@ -119,14 +119,14 @@
 		padding: 24px 16px 24px 16px;
 		text-align: left;
 		color: $white;
-		//border: rem(1) solid $sa_silver;
+		//border: rem(1) solid $color-base-1;
 		border-radius: rem(3);
 		background-color: $color-base-1;
 		letter-spacing: rem(1);
 		text-transform: uppercase;
 		font-size: rem(16);
 		@media (max-width: rem(991.98)) {
-			//border: rem(1) solid $sa_silver;
+			//border: rem(1) solid $color-base-1;
 			//border-radius: rem(3);
 		}
 

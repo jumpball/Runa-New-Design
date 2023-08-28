@@ -3,7 +3,7 @@
 	// = BOX = //
 	&__box {
 		.calendar-slider__item.swiper-slide > div > div {
-			border: rem(1) solid $sa_silver;
+			border: rem(1) solid $color-base-1;
 			border-radius: rem(3);
 		}
 	}
@@ -11,7 +11,7 @@
 	// = SCORE = //
 
 	&__score {
-		font-family: "Oswald", sans-serif;
+		font-family: $fontFamily;
 		font-weight: 900;
 		display: flex;
 		justify-content: center;

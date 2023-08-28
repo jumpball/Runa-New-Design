@@ -4,7 +4,7 @@
 	&__map {
 		background-color: $white;
 		border-radius: rem(3) rem(3) 0px 0px;
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 	}
 
 	// = BOX = //
@@ -18,7 +18,7 @@
 		background: $white;
 		padding: 40px 40px 40px 40px;
 		border-radius: 0px 0px rem(3) rem(3);
-		border: rem(1) solid $sa_silver;
+		border: rem(1) solid $color-base-1;
 		@media (any-hover: hover) {
 			&:hover {
 				box-shadow: $shadow-1;

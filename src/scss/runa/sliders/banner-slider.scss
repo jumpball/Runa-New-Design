@@ -2,7 +2,7 @@
 	// === BOX === //
 	&__box {
 		position: relative;
-		@include adaptiveValue("margin-top", 20, 10, 1050, 600, 1);
+		//@include adaptiveValue("margin-top", 20, 10, 1050, 600, 1);
 		overflow: hidden;
 	}
 
@@ -13,14 +13,16 @@
 	// === ITEM === //
 	&__item {
 		width: 100%;
-		border-radius: rem(3);
+		border: rem(1) solid $color-base-1;
+		border-radius: rem(15);
+		overflow: hidden;
 	}
 
 	// === IMAGE === //
 	&__image {
 		position: relative;
-		padding: 0px 0px 58% 0px;
-		overflow: hidden;
+		padding: 0px 0px 30% 0px;
+		//overflow: hidden;
 	}
 	// === NAVIGATION & PAGINATION === //
 
@@ -36,15 +38,15 @@
 	}
 	.swiper-pagination {
 		position: relative;
-		@include adaptiveValue("margin-top", 30, 20, 992, 600, 1);
+		@include adaptiveValue("margin-top", 30, 20, 992, 768, 1);
 	}
 
 	.swiper-pagination-bullet {
-		@include adaptiveValue("width", 20, 14, 992, 600, 1);
-		@include adaptiveValue("height", 20, 14, 992, 600, 1);
-		@include adaptiveValue("line-height", 20, 14, 992, 600, 1);
+		@include adaptiveValue("width", 20, 14, 992, 768, 1);
+		@include adaptiveValue("height", 20, 14, 992, 768, 1);
+		@include adaptiveValue("line-height", 20, 14, 992, 768, 1);
 		background-color: $color-base-1;
-		border: rem(1) solid $white;
+		//border: rem(1) solid $white;
 	}
 	// === SLIDE-ACTIVE === //
 	.swiper-slide-active {
