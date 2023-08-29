@@ -43,6 +43,10 @@
 		justify-content: space-between;
 		align-items: start;
 		gap: rem(20);
+		@media (max-width: rem(767.98)) {
+			@include adaptiveValue("top", 40, 24, 767.98, 400, 1);
+			@include adaptiveValue("left", 40, 24, 767.98, 400, 1);
+		}
 	}
 	&__box {
 		display: flex;
@@ -57,9 +61,14 @@
 		text-transform: uppercase;
 		color: $color-base-4;
 		text-transform: uppercase;
-		//@include adaptiveValue("font-size", 40, 18, 1920, 768, 1);
-		//@include adaptiveValue("line-height", 56, 20, 1920, 768, 1);
-		//@include adaptiveValue("letter-spacing", 3, 2, 1920, 768, 1);
+		@media (max-width: rem(949.98)) {
+			@include adaptiveValue("font-size", 30, 22, 949.98, 768, 1);
+			@include adaptiveValue("line-height", 32, 24, 949.98, 768, 1);
+		}
+		@media (max-width: rem(767.98)) {
+			@include adaptiveValue("font-size", 34, 30, 767.98, 400, 1);
+			@include adaptiveValue("line-height", 36, 32, 767.98, 400, 1);
+		}
 	}
 	&__surname {
 		font-weight: 700;
@@ -68,9 +77,14 @@
 		text-transform: uppercase;
 		font-size: 54px;
 		font-style: normal;
-		//@include adaptiveValue("font-size", 40, 18, 1920, 768, 1);
-		//@include adaptiveValue("line-height", 56, 20, 1920, 768, 1);
-		//@include adaptiveValue("letter-spacing", 3, 2, 1920, 768, 1);
+		@media (max-width: rem(949.98)) {
+			@include adaptiveValue("font-size", 54, 40, 949.98, 768, 1);
+			@include adaptiveValue("line-height", 56, 42, 949.98, 768, 1);
+		}
+		@media (max-width: rem(767.98)) {
+			@include adaptiveValue("font-size", 34, 30, 767.98, 400, 1);
+			@include adaptiveValue("line-height", 36, 32, 767.98, 400, 1);
+		}
 	}
 
 	&__bage {
@@ -96,18 +110,11 @@
 		color: $color-base-1;
 		text-transform: uppercase;
 		font-weight: 700;
-		@include adaptiveValue("font-size", 22, 20, 1920, 768, 1);
-		@include adaptiveValue("line-height", 24, 22, 1920, 768, 1);
+		@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
+		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
 	}
 
 	// = BORDERS = //
-	//&__border {
-
-	//@include adaptiveValue("font-size", 12, 8, 1920, 768, 1);
-	//@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
-	//}
-
-	// .team-leader-card__stats
 
 	&__stats {
 		display: grid;
@@ -153,8 +160,6 @@
 		text-transform: uppercase;
 	}
 
-	// .team-leader-card__photo
-
 	&__photo {
 		width: auto;
 		height: 100%;
@@ -162,14 +167,14 @@
 		background: cover no-repeat;
 		z-index: 2;
 		@include adaptiveValue("margin-left", 30, 300, 1920, 991.98, 1);
+		@media (max-width: rem(949.98)) {
+			@include adaptiveValue("margin-left", 300, 350, 949.98, 768, 1);
+		}
 	}
-
-	// .team-leader-card__num
 
 	&__num {
 		position: absolute;
 		top: rem(10);
-		//right: rem(120);
 		text-align: center;
 		color: $color-base-4;
 		@include adaptiveValue("right", 120, 80, 1920, 991.98, 1);
@@ -177,25 +182,36 @@
 		@include adaptiveValue("font-size", 550, 250, 1920, 991.98, 1);
 		@include adaptiveValue("line-height", 500, 200, 1920, 991.98, 1);
 		@include adaptiveValue("letter-spacing", -12, 4, 1920, 991.98, 1);
-		//font-style: normal;
 		font-weight: 700;
-		//line-height: normal;
-		//letter-spacing: -12px;
 		text-transform: uppercase;
 		z-index: 1;
-	}
 
-	// .team-leader-card__border
+		@media (max-width: rem(949.98)) {
+			@include adaptiveValue("right", 80, 24, 949.98, 768, 1);
+			@include adaptiveValue("top", 10, 44, 949.98, 768, 1);
+			@include adaptiveValue("width", 250, 180, 949.98, 768, 1);
+			@include adaptiveValue("font-size", 250, 180, 949.98, 768, 1);
+			@include adaptiveValue("line-height", 200, 180, 949.98, 768, 1);
+			@include adaptiveValue("letter-spacing", 4, 2, 949.98, 768, 1);
+		}
+	}
 
 	&__big-border {
 		position: absolute;
 		top: 0;
-		//right: rem(40);
-		@include adaptiveValue("right", 40, 20, 1920, 991.98, 1);
+		@include adaptiveValue("right", 40, 15, 1920, 991.98, 1);
+		@include adaptiveValue("width", 135, 120, 1920, 991.98, 1);
 		width: 135px;
-		height: 546px;
+		height: 100%;
 		flex-shrink: 0;
 		z-index: 2;
+		@media (max-width: rem(949.98)) {
+			@include adaptiveValue("right", 15, 0, 949.98, 849.98, 1);
+			@include adaptiveValue("width", 120, 100, 949.98, 849.98, 1);
+		}
+		@media (max-width: rem(849.98)) {
+			display: none;
+		}
 	}
 
 	// = SCORE = //
