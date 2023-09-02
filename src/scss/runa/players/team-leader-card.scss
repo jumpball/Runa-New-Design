@@ -44,8 +44,11 @@
 		align-items: start;
 		gap: rem(20);
 		@media (max-width: rem(767.98)) {
-			@include adaptiveValue("top", 40, 24, 767.98, 400, 1);
-			@include adaptiveValue("left", 40, 24, 767.98, 400, 1);
+			@include adaptiveValue("top", 40, 16, 767.98, 400, 1);
+			@include adaptiveValue("left", 40, 16, 767.98, 400, 1);
+		}
+		@media (max-width: rem(699.98)) {
+			height: 90%;
 		}
 	}
 	&__box {
@@ -95,9 +98,12 @@
 		gap: 8px;
 		background-color: $white;
 		border-radius: rem(10);
-
 		p {
 			color: $color-base-2;
+		}
+		@media (max-width: rem(699.98)) {
+			padding: 8px 10px;
+			gap: 5px;
 		}
 	}
 
@@ -112,6 +118,10 @@
 		font-weight: 700;
 		@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
 		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
+		@media (max-width: rem(699.98)) {
+			@include adaptiveValue("font-size", 16, 12, 699.98, 320, 1);
+			@include adaptiveValue("line-height", 18, 16, 699.98, 320, 1);
+		}
 	}
 
 	// = BORDERS = //
@@ -122,6 +132,9 @@
 		grid-template-rows: auto;
 		gap: 12px;
 		z-index: 3;
+		@media (max-width: rem(699.98)) {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	// .team-leader-card__stats-item
@@ -136,6 +149,10 @@
 		align-items: flex-start;
 		gap: 2px;
 		border-radius: 15px 0px;
+		@media (max-width: rem(699.98)) {
+			@include adaptiveValue("width", 140, 115, 767.98, 450, 1);
+			padding: 12px 20px;
+		}
 	}
 
 	// .team-leader-card__stats-label
@@ -158,17 +175,26 @@
 		font-weight: 700;
 		line-height: normal;
 		text-transform: uppercase;
+		@media (max-width: rem(767.98)) {
+			@include adaptiveValue("font-size", 54, 30, 767.98, 450, 1);
+		}
 	}
 
 	&__photo {
 		width: auto;
 		height: 100%;
 		flex-shrink: 0;
-		background: cover no-repeat;
+		//background: cover no-repeat;
 		z-index: 2;
 		@include adaptiveValue("margin-left", 30, 300, 1920, 991.98, 1);
 		@media (max-width: rem(949.98)) {
 			@include adaptiveValue("margin-left", 300, 350, 949.98, 768, 1);
+		}
+		@media (max-width: rem(767.98)) {
+			@include adaptiveValue("margin-top", 140, 120, 767.98, 450, 1);
+		}
+		@media (max-width: rem(699.98)) {
+			@include adaptiveValue("margin-left", 350, 180, 699.98, 450, 1);
 		}
 	}
 
@@ -193,6 +219,16 @@
 			@include adaptiveValue("font-size", 250, 180, 949.98, 768, 1);
 			@include adaptiveValue("line-height", 200, 180, 949.98, 768, 1);
 			@include adaptiveValue("letter-spacing", 4, 2, 949.98, 768, 1);
+		}
+
+		@media (max-width: rem(767.98)) {
+			@include adaptiveValue("width", 180, 100, 767.98, 450, 1);
+			@include adaptiveValue("font-size", 180, 100, 767.98, 450, 1);
+			@include adaptiveValue("line-height", 180, 100, 767.98, 450, 1);
+		}
+
+		@media (max-width: rem(549.98)) {
+			display: none;
 		}
 	}
 

@@ -3,11 +3,9 @@
 	position: relative;
 	width: 100%;
 	height: fit-content;
-	//min-width: 270px;
-	border-radius: rem(3);
+	border-radius: rem(15);
 	overflow: hidden;
-	//border: 1px solid transparent;
-	background: $white;
+	background: $color-base-1;
 	transition: all 0.5s ease 0s;
 
 	// = STORE CARD / HOVER = //
@@ -15,11 +13,11 @@
 		transition: all 0.5s ease 0s;
 		box-shadow: $shadow-1;
 		.store-card__header {
-			background-color: $gold;
-			color: $mainColor;
+			background-color: $color-base-4;
+			color: $color-base-1;
 			transition: all 0.5s ease 0s;
 			h3 {
-				color: $mainColor;
+				color: $color-base-1;
 			}
 		}
 		.store-card__photo {
@@ -39,32 +37,36 @@
 
 	// = HEADER = //
 	&__header {
-		width: 100%;
-		height: 48px;
-		padding: 8px 10px 0px 10px;
-		background: $mainColor;
-		border-radius: rem(3) rem(3) 0px 0px;
+		width: fit-content;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0px 24px 0px 24px;
+		background: $color-base-1;
+		border-radius: 0px rem(15) 0px 0px;
 		transition: all 0.5s ease 0s;
-		color: $white;
+		color: $color-base-4;
 		font-weight: 900;
 		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
+		justify-content: flex-start;
+		align-items: center;
 		z-index: 2;
 		@media (max-width: rem(549.98)) {
-			height: 40px;
-			padding: 8px 8px 0px 8px;
+			padding: 0px 16px 0px 16px;
 		}
 		h3 {
-			color: $gold;
+			color: $color-base-4;
 			display: inline-block;
 			font-family: $fontFamily;
 			font-size: rem(30);
+			line-height: rem(42);
 			@media (max-width: rem(549.98)) {
 				font-size: rem(24);
+				line-height: rem(34);
 			}
 			@media (max-width: rem(449.98)) {
 				font-size: rem(20);
+				line-height: rem(30);
 			}
 		}
 
@@ -72,13 +74,13 @@
 			content: "₽";
 			margin: 0px 0px 0px 5px;
 			font-weight: 600;
-			font-size: rem(24);
-			font-family: "Roboto", sans-serif;
+			font-size: rem(30);
+			font-family: $fontFamily;
 			@media (max-width: rem(549.98)) {
-				font-size: rem(20);
+				font-size: rem(24);
 			}
 			@media (max-width: rem(449.98)) {
-				font-size: rem(16);
+				font-size: rem(20);
 			}
 		}
 
@@ -99,7 +101,7 @@
 			margin: 0px 0px 0px 5px;
 			font-weight: 600;
 			font-size: rem(24);
-			font-family: "Roboto", sans-serif;
+			font-family: $fontFamily;
 			@media (max-width: rem(549.98)) {
 				font-size: rem(20);
 			}
@@ -114,32 +116,14 @@
 		z-index: 2;
 	}
 
-	// = TOURNAMENT LOGO = //
-	// &__photo {
-	// 	align-self: center;
-	// 	position: relative;
-
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	overflow: hidden;
-	// 	margin: 20px 0px 10px 0px;
-	// 	padding: 10px 0px 10px 0px;
-	// 	transition: all 0.5s ease 0s;
-	// 	@media (max-width: rem(649.98)) {
-	// 		@include adaptiveValue("min-height", 200, 140, 649.98, 320, 1);
-	// 		@include adaptiveValue("min-width", 200, 140, 649.98, 320, 1);
-	// 		margin: 0px 0px 0px 0px;
-	// 		padding: 5px 0px 5px 0px;
-	// 	}
-	// }
-
 	// = PHOTO = //
 
 	&__photo {
 		position: relative;
-		//margin: 20px 0px 0px 0px;
-		height: rem(270);
-		width: rem(270);
+		@include adaptiveValue("height", 442, 220, 1400, 480, 1);
+		@include adaptiveValue("width", 442, 220, 1400, 480, 1);
+		min-height: 100%;
+		min-width: 100%;
 		overflow: hidden;
 		transition: all 0.5s ease 0s;
 		z-index: 1;
@@ -154,37 +138,8 @@
 		@media (max-width: rem(479.98)) {
 			@include adaptiveValue("width", 200, 138, 479.98, 320, 1);
 			@include adaptiveValue("height", 200, 138, 479.98, 320, 1);
-			//border-bottom: 3px solid $color-base-1;
 		}
 	}
-	// &__photo::after {
-	// 	content: "";
-	// 	background: $white;
-	// 	background-image: url("@img/RUNA/border/border-270-20-green.svg");
-	// 	position: absolute;
-	// 	bottom: 0;
-	// 	left: 50%;
-	// 	transform: translateX(-50%);
-	// 	width: 100%;
-	// 	height: rem(20);
-	// 	@media (max-width: rem(479.98)) {
-	// 		display: none;
-	// 	}
-	// }
-	// &__image {
-	// 	transition: all 0.5s ease 0s;
-	// 	-webkit-filter: drop-shadow(-5px 13px 15px #05050580);
-	// 	filter: drop-shadow(-5px 13px 14px rgba(5, 5, 5, 0.5));
-	// }
-	// = ICON = //
-	// &__icon {
-	// 	position: relative;
-	// 	width: 14px;
-	// 	height: 14px;
-	// 	@media (max-width: rem(449.98)) {
-	// 		display: none;
-	// 	}
-	// }
 
 	// = CONTENT = //
 	&__content {
@@ -195,7 +150,6 @@
 		margin: 8px 0px 20px 0px;
 		padding: 0px 8px 0px 8px;
 		z-index: 2;
-		//text-align: center;
 	}
 	&__content span {
 		display: inline-block;
@@ -206,7 +160,6 @@
 		color: $gray;
 		@media (max-width: rem(649.98)) {
 			@include adaptiveValue("font-size", 12, 8, 649.98, 340, 1);
-			//@include adaptiveValue("line-height", 24, 16, 649.98, 340, 1);
 			padding: 0px 5px 0px 5px;
 		}
 	}
@@ -228,18 +181,15 @@
 		}
 	}
 
+	// = SUBTITLE = //
 	&__subtitle {
-		//display: inline-block;
 		width: 100%;
 		margin-bottom: 0;
 		padding: 0px 8px 0px 8px;
 		color: $color-base-1;
-		//font-family: "Roboto Condensed";
-		//letter-spacing: rem(1);
 		font-size: rem(12);
 		line-height: rem(24);
 		text-transform: uppercase;
-		//font-weight: 900;
 		text-align: center;
 		@media (max-width: rem(649.98)) {
 			@include adaptiveValue("font-size", 12, 8, 649.98, 340, 1);

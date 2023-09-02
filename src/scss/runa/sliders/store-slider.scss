@@ -1,13 +1,14 @@
 // === CALENDAR SLIDER === // (AD)
 
 .store-slider {
-	margin: 20px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
 	//padding: 20px 9px 20px 9px;
 	overflow: hidden;
+	border-radius: rem(15);
 
 	// = STORE PRODUCT CARDS = //
 	.store-card {
-		border: rem(1) solid $white;
+		border: 1px solid $color-base-1;
 	}
 
 	// = BOX = //
@@ -46,6 +47,8 @@
 	// = ITEM = //
 	&__item {
 		position: relative;
+		overflow: hidden;
+		border-radius: rem(15);
 	}
 
 	// = NAVIGATION = //
@@ -86,8 +89,24 @@
 	// = PAGINATION = //
 	&__pagination {
 	}
+	// .swiper-pagination {
+	// 	display: none;
+	// 	position: relative;
+	// 	margin-top: rem(30);
+	// 	@media (max-width: rem(767.98)) {
+	// 		display: none;
+	// 	}
+	// }
+	// .swiper-pagination-bullet {
+	// 	width: rem(20);
+	// 	height: rem(20);
+	// 	line-height: rem(20);
+	// 	background-color: $white;
+	// 	border: rem(1) solid $bgColor_2;
+	// }
+
 	.swiper-pagination {
-		display: none;
+		//display: none;
 		position: relative;
 		margin-top: rem(30);
 		@media (max-width: rem(767.98)) {
@@ -95,10 +114,10 @@
 		}
 	}
 	.swiper-pagination-bullet {
-		width: rem(20);
-		height: rem(20);
-		line-height: rem(20);
-		background-color: $white;
-		border: rem(1) solid $bgColor_2;
+		width: rem(10);
+		height: rem(10);
+		line-height: rem(16);
+		background-color: $color-base-3;
+		border: rem(1) solid $color-base-4;
 	}
 }

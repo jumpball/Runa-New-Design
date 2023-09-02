@@ -54,7 +54,7 @@ var CalendarSwiper = new Swiper('.calendar-slider', {
 	}
 });
 
-// === PUBLICATIONS CARDS SLIDER === //
+// === BANNER SLIDER === //
 // var PubCardSwiper = new Swiper('.pub-cards-slider', {
 // 	slidesPerView:'auto',
 // 	spaceBetween: 20,
@@ -93,6 +93,7 @@ var BannerSwiper = new Swiper('.banner-slider', {
 	//slidesPerView: 'auto',
 	slidesPerView: 1,
 	spaceBetween: 20,
+	effect: 'fade',
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
@@ -139,6 +140,7 @@ var HeadSwiper = new Swiper('.head-slider', {
 	slidesPerView: 'auto',
 	//slidesPerView: 1,
 	spaceBetween: 20,
+	effect: 'fade',
 	observer: true,
 	observeParents: true,
 	observeSlideChildren: true,
@@ -756,19 +758,19 @@ var StoreSwiper = new Swiper('.store-slider', {
 		},
 		650: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+			spaceBetween: 10,
 		},
 		950: {
 			slidesPerView: 3,
-			spaceBetween: 20,
+			spaceBetween: 10,
 		},
 		1279.98: {
-			slidesPerView: 4,
-			spaceBetween: 20,
+			slidesPerView: 3,
+			spaceBetween: 10,
 		},
 		1600: {
-			slidesPerView: 5,
-			spaceBetween: 20,
+			slidesPerView: 3,
+			spaceBetween: 10,
 		},
 	}
 });

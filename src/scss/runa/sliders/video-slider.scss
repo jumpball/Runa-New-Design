@@ -4,7 +4,7 @@
 .video-slider {
 	// === VIDEO SLIDER BLOCK === //
 	&__block {
-		margin: 20px 0px 0px 0px;
+		margin: 40px 0px 20px 0px;
 		overflow: hidden;
 	}
 
@@ -15,7 +15,9 @@
 	// === VIDEO SLIDER ITEM === //
 	&__item {
 		width: 100%;
+		overflow: hidden;
 		border: rem(1) solid $color-base-1;
+		border-radius: rem(15);
 	}
 
 	// === VIDEO SLIDER BOX === //
@@ -62,21 +64,24 @@
 		}
 	}
 
-	.swiper-pagination {
-		position: relative;
-		@include adaptiveValue("margin-top", 30, 20, 992, 600, 1);
-	}
-
-	.swiper-pagination-bullet {
-		@include adaptiveValue("width", 20, 14, 992, 600, 1);
-		@include adaptiveValue("height", 20, 14, 992, 600, 1);
-		@include adaptiveValue("line-height", 20, 14, 992, 600, 1);
-		background-color: $color-base-1;
-		border: rem(1) solid $white;
-	}
 	// === SLIDE-ACTIVE === //
 	.swiper-slide-active {
 		//box-shadow: $shadow-1;
+	}
+
+	.swiper-pagination {
+		position: relative;
+		margin-top: rem(30);
+		@media (max-width: rem(767.98)) {
+			display: none;
+		}
+	}
+	.swiper-pagination-bullet {
+		width: rem(10);
+		height: rem(10);
+		line-height: rem(16);
+		background-color: $color-base-3;
+		border: rem(1) solid $color-base-4;
 	}
 }
 
@@ -107,7 +112,7 @@
 	}
 }
 
-// = SCREEM MENU SLIDER = //
+// = SCREEN MENU SLIDER = //
 .screen-menu-slider {
 	&__box {
 	}

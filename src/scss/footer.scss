@@ -150,35 +150,9 @@
 			}
 		}
 	}
-	&__top-menu-btn {
-		margin-left: auto;
-		display: inline-flex;
-		background-color: $color-base-1;
-		border-radius: rem(3);
-		@include adaptiveValue("padding-top", 25, 20, 1600, 991.98, 1);
-		@include adaptiveValue("padding-bottom", 25, 20, 1600, 991.98, 1);
-		@include adaptiveValue("padding-right", 35, 25, 1600, 991.98, 1);
-		@include adaptiveValue("padding-left", 35, 25, 1600, 991.98, 1);
-		//min-width: 205px;
-		color: $white;
-		border: rem(1) solid $gray;
-		font-weight: 500;
-		justify-content: center;
-		text-align: center;
-		letter-spacing: 1px;
-		cursor: pointer;
-		text-transform: uppercase;
-		white-space: nowrap;
-		transition: all 0.5s ease 0s;
-		@media (any-hover: hover) {
-			&:hover {
-				transition: all 0.5s ease 0s;
-				background-color: $white;
-				color: $color-base-1;
-			}
-		}
+	&__button {
 		@media (max-width: rem(959.98)) {
-			margin-left: 0;
+			margin: 20px 0px 0px 0px;
 		}
 	}
 
