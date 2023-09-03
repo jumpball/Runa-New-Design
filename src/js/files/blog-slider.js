@@ -813,11 +813,11 @@ var swiper = new Swiper('.partners-slider', {
 
 		},
 		1140: {
-			slidesPerView: 5,
+			slidesPerView: 4,
 
 		},
 		1360: {
-			slidesPerView: 6,
+			slidesPerView: 5,
 
 		},
 	}
