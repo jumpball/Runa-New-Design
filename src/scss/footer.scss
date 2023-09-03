@@ -4,7 +4,7 @@
 		display: block !important;
 		padding: 1em !important;
 		padding: rem(20) 0px rem(20) 0px;
-		border-top: 1px solid $gray;
+		border-top: 1px solid $color-base-1;
 		border-bottom: none;
 		border-left: none;
 		border-right: none;
@@ -22,7 +22,7 @@
 	margin: 0 auto;
 	width: 100%;
 	background: $mainColor;
-	color: $gray;
+	color: $color-base-5;
 	z-index: 2;
 	@media (max-width: rem(959.98)) {
 		width: 100%;
@@ -66,7 +66,7 @@
 	&__bottom-section {
 		padding: rem(20) 0px;
 		margin: rem(30) rem(30) rem(20) rem(30);
-		border-top: rem(1) solid $gray;
+		border-top: rem(1) solid $color-base-1;
 		@media (max-width: rem(959.98)) {
 			border-top: none;
 			text-align: center;
@@ -191,6 +191,7 @@
 
 	// = TITLE = //
 	&__title {
+		color: $color-base-4;
 		font-size: rem(16);
 		margin-top: 0;
 		margin-bottom: rem(16);
@@ -203,6 +204,7 @@
 		}
 	}
 	&__title-1 {
+		color: $color-base-4;
 		font-size: rem(20);
 		margin-top: rem(50);
 		margin-bottom: rem(20);
@@ -248,7 +250,7 @@
 	&__column-menu-link {
 		@media (any-hover: hover) {
 			&:hover {
-				color: $color-zenit;
+				color: $color-base-4;
 			}
 		}
 	}
