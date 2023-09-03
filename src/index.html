@@ -10,7 +10,7 @@
 <body>
 	<div class="rootpage">
 		<div class="client-logo">
-			<img src="@img/RUNA/LOGO/runa-mini-white.svg" alt="лого Руна">
+			<img src="@img/RUNA/LOGO/Runa-Logo-new-green.svg" alt="лого Руна">
 		</div>
 		<h1>ПБК «РУНА»</h1>
 		<div class="rootpage__info">
@@ -21,8 +21,8 @@
 		</div>
 		<h2>Демо страниц сайта:</h2>
 		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная страница</a></li>
-			<li><a target="_blank" href="player-profile.html">Профайл игрока</a></li>
+			<li><a target="_blank" href="home.html">Главная страница (New)</a></li>
+			<li><a target="_blank" href="player-profile.html">Профайл игрока (New)</a></li>
 			<li><a target="_blank" href="coach-profile.html">Профайл тренера</a></li>
 			<li><a target="_blank" href="team-profile.html">Профайл Команды</a></li>
 			<li><a target="_blank" href="match-center.html">Матч-центр</a></li>
@@ -50,7 +50,7 @@
 </body>
 <style>
 	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+	/* @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap"); */
 
 	*,
 	*::before,
@@ -69,28 +69,29 @@
 		min-width: 320px;
 		width: 100%;
 		color: #fff;
-		background-color: #0f524d;
+		background-color: #5b2a98;
 	}
 
 	body {
-		font-family: Montserrat;
+		font-family: Bebas Neue Pro;
 		font-size: 100%;
 		line-height: 1;
-		font-size: 1rem;
+		font-size: 24px;
 	}
 
 	a {
-		text-decoration: underline;
-		color: #ccae61;
+		text-decoration: none;
+		color: #fff;
 	}
 
 	a:visited {
-		text-decoration: underline;
-		color: #ccae61;
+		text-decoration: none;
+
 	}
 
 	a:hover {
-		text-decoration: none;
+		text-decoration: underline;
+		color: #A3D43F;
 	}
 
 	ol li {
@@ -117,7 +118,7 @@
 
 	.client-logo img {
 		width: 200px;
-		height: 113.2px;
+		height: 148.99px;
 
 	}
 
@@ -138,37 +139,39 @@
 	}
 
 	h1 {
-		color: #ccae61;
+		color: #A3D43F;
 		width: 100%;
-		font-size: 3rem;
+		font-size: 50px;
 		text-align: center;
 		margin: 1.25rem 0px 1.25rem 0px;
 	}
 
 	@media (max-width: 767px) {
 		h1 {
-			font-size: 1.85rem;
+			font-size: 50px;
 			margin: 1rem 0px 1rem 0px;
 		}
 	}
 
 	h2 {
-		color: #ccae61;
-		font-size: 1.25rem;
+		color: #A3D43F;
+		font-size: 30px;
 		margin: 0px 0px 1rem 0px;
 	}
 
 	@media (max-width: 767px) {
 		h2 {
-			font-size: 1.125rem;
+			font-size: 26;
 			margin: 0px 0px 1rem 0px;
 		}
 	}
 
 	.rootpage__info {
 		width: 98%;
-		font-size: 16px;
+		font-size: 20px;
 		line-height: 140%;
+		letter-spacing: 1.3px;
+		font-weight: 500;
 
 		margin: 0px 0px 1.5rem 0px;
 	}
@@ -198,17 +201,12 @@
 	}
 
 	.rootpage__contacts {
-		background: #3d308e;
+		background: #181220;
 
 	}
 
 	.rootpage__contacts a {
-		color: #ccae61;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
+		color: #fff;
 	}
 </style>
 

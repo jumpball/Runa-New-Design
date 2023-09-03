@@ -196,7 +196,7 @@ var GalerySwiper = new Swiper('.galery-slider', {
 	autoHeight: true,
 	centeredSlides: true,
 	autoplay: {
-		delay: 12000,
+		delay: 7000,
 		stopOnLastSlide: false,
 		disableOnInteraction: false,
 	},
@@ -225,7 +225,7 @@ var GalerySwiper = new Swiper('.galery-slider', {
 		},
 		599.98: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+			spaceBetween: 10,
 		},
 		949.98: {
 			slidesPerView: 3,

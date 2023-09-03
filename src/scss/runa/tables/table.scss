@@ -15,7 +15,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		font-family: "Roboto Condensed";
+		font-family: $fontFamily;
 		@media (max-width: rem(991.98)) {
 			flex-direction: column;
 			.table__block .text-center {
@@ -77,9 +77,10 @@
 	&__block table th {
 		position: sticky;
 		top: 0;
-		color: #d5dde5;
-		background-color: #3a3a3a;
+		color: $color-base-4;
+		background-color: $color-base-8;
 		border-right: 1px solid rgba(113, 166, 220, 0.2);
+		//border-right: 1px solid $color-base-7;
 		font-size: 15px;
 		text-transform: uppercase;
 		font-weight: 100;
@@ -109,7 +110,8 @@
 		// min-width: 3.4375rem;
 	}
 	&__block table td {
-		background: #fff;
+		background-color: $color-base-6;
+		color: $color-base-5;
 		padding: 15px;
 		text-align: center;
 		vertical-align: middle;
@@ -117,23 +119,26 @@
 		font-size: 16px;
 		white-space: nowrap;
 		border-right: 1px solid rgba(113, 166, 220, 0.2);
+		//border-right: 1px solid $color-base-5;
 		min-width: 3.4375rem;
 	}
 	&__block table tbody tr:hover td {
-		background-color: #abafb3;
+		background-color: $color-base-1;
 		color: $white;
 		border-top: none;
 		border-bottom: none;
 	}
 	&__block table tfoot tr:hover td {
-		background-color: #3a3a3a;
-		color: #fff;
+		background-color: $color-base-2;
+		color: $color-base-4;
 		border-bottom: none;
 	}
 	&__block table tfoot td {
 		border-top: 1px solid rgba(113, 166, 220, 0.2);
-		background-color: #576574;
-		color: #fff;
+		//background-color: #576574;
+		//color: #fff;
+		background-color: $color-base-8;
+		color: $color-base-4;
 		font-weight: 300;
 		padding: 15px;
 		text-transform: uppercase;
@@ -289,8 +294,10 @@
 
 	// = WRAPPER = //
 	&__wrapper-dark {
+		border-radius: rem(5);
+		overflow: hidden;
 		border: 1px solid rgba(113, 166, 220, 0.2);
-		font-family: "Roboto Condensed";
+		font-family: $fontFamily;
 	}
 
 	// = IMAGE / PHOTO = //
@@ -318,6 +325,9 @@
 		width: rem(40);
 		height: rem(40);
 		margin: 0 auto;
+		background-color: $color-base-5;
+		padding: 3px;
+		border-radius: 50%;
 	}
 	&__photo {
 		position: relative;
@@ -461,7 +471,7 @@
 			color: #146eb4;
 		}
 		.table__block table a:hover {
-			color: #a80d1c;
+			color: $color-base-4;
 		}
 	}
 }
@@ -473,7 +483,7 @@ tbody tr:hover td {
 	border-bottom: 0.0625rem solid transparent;
 }
 tbody tr:nth-child(odd) td {
-	background-color: #eef0f2;
+	background-color: $color-base-7;
 }
 tbody tr:nth-child(odd):hover td {
 	background-color: #a4a9ad;

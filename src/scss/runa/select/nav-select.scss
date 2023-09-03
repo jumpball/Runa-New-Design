@@ -64,7 +64,7 @@
 	}
 	// === nav-select LABEL === //
 	&__label {
-		font-family: "Roboto Condensed";
+		font-family: $fontFamily;
 		opacity: 0;
 		display: inline-block;
 		@include adaptiveValue("font-size", 12, 11, 1600, 767.98, 1);
@@ -74,10 +74,10 @@
 		padding: 0px 0px 3px 5px;
 	}
 	&__label-black {
-		color: $mainColor;
+		color: $color-base-5;
 	}
 	&__label-white {
-		color: $white;
+		color: $color-base-4;
 	}
 
 	// === nav-select LIST === //
@@ -91,23 +91,23 @@
 // === SELECT === //
 .select {
 	position: relative;
-	font-family: "Roboto Condensed";
+	font-family: $fontFamily;
 	//Тело селекта
 	&__body {
 		position: relative;
 	}
 	// Заголовок
 	&__title {
-		font-family: "Roboto Condensed";
-		border: rem(1) solid $gray;
+		font-family: $fontFamily;
+		border: rem(1) solid $color-base-7;
 		border-radius: rem(3);
 		width: 100%;
 		position: relative;
 		//height: rem(40);
-		background-color: $white;
+		background-color: $color-base-6;
 		cursor: pointer;
 		//color: inherit;
-		color: $mainColor;
+		color: $color-base-5;
 		text-align: left;
 	}
 	// Значение в заголовке
@@ -131,7 +131,7 @@
 			width: 0;
 			border-left: 6px solid transparent;
 			border-right: 6px solid transparent;
-			border-top: 10px solid $mainColor;
+			border-top: 10px solid $color-base-5;
 			transition: transform 0.5s ease 0s;
 
 			._select-open & {
@@ -149,20 +149,20 @@
 	}
 	// Лейбл
 	&__label {
-		font-family: "Roboto Condensed";
+		font-family: $fontFamily;
 		font-style: italic;
 		@include adaptiveValue("font-size", 14, 12, 1600, 415, 1);
 		text-transform: uppercase;
-		color: $white;
+		color: $color-base-6;
 		font-weight: 400;
 	}
 
 	&__label-1 {
-		font-family: "Roboto Condensed";
+		font-family: $fontFamily;
 		font-style: italic;
 		@include adaptiveValue("font-size", 14, 12, 1600, 415, 1);
 		text-transform: uppercase;
-		color: $mainColor;
+		color: $color-base-5;
 		font-weight: 400;
 	}
 	// Поле ввода
@@ -180,16 +180,16 @@
 	}
 	// Выпадающий список
 	&__options {
-		font-family: "Roboto Condensed";
-		color: $mainColor;
+		font-family: $fontFamily;
+		color: $color-base-5;
 		position: absolute;
 		top: rem(39);
 		border-radius: 0 0 3px 3px;
 		min-width: 100%;
 		left: 0;
-		background-color: $white;
+		background-color: $color-base-6;
 		border-top: 0;
-		border: 1px solid $mainColor;
+		border: 1px solid $color-base-7;
 		border-top: 0;
 		padding: 10px 0px 5px 0px;
 		z-index: 2;
@@ -209,7 +209,7 @@
 	}
 	// Пункт
 	&__option {
-		font-family: "Roboto Condensed";
+		font-family: $fontFamily;
 		width: 100%;
 		text-align: left;
 		@include adaptiveValue("font-size", 18, 16, 1600, 991.98, 1);
@@ -218,12 +218,13 @@
 		color: inherit;
 
 		&._select-selected {
-			background-color: #eee;
+			background-color: $color-base-8;
 		}
 
 		@media (any-hover: hover) {
 			&:hover {
-				background: #d9d9d9;
+				background: $color-base-7;
+				color: $color-base-4;
 			}
 		}
 	}

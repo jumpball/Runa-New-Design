@@ -1,6 +1,10 @@
 // === PROFILE PERSON HEADER == //
 .profile-person {
 	&__header {
+		background-image: url("@img/RUNA/patterns/patterns-2.svg");
+		background-size: cover;
+		background-blend-mode: multiply;
+		//background: radial-gradient(30.96% 30.48% at 40.91% 40.95%, #3f107d 0%, rgba(63, 16, 125, 0.05) 100%);
 		margin: 40px 0px 0px 0px;
 		display: grid;
 		grid-template-columns: rem(600) 1fr;

@@ -146,7 +146,7 @@ body {
 
 // === PAGE === //
 .page {
-	background-color: $bgColor_8;
+	background-color: $mainColor;
 }
 
 // === BLOCK HIDDEN === //
@@ -224,7 +224,8 @@ ul.page__breadcrumb {
 	padding: 10px 0px 10px 0px;
 	list-style: none;
 	word-wrap: normal;
-	color: $gray;
+	background-color: $mainColor;
+	color: $color-base-5;
 	z-index: 2;
 	//white-space: nowrap;
 	@media (max-width: $tablet) {

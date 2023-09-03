@@ -4,8 +4,6 @@
 	position: relative;
 	margin: 0 auto;
 	padding: 40px 0px 0px 0px;
-	@media (max-width: rem(600)) {
-	}
 
 	// === TIME-LINE BOX === //
 	&__box {
@@ -29,8 +27,8 @@
 		width: 26px;
 		height: 26px;
 		right: -13px;
-		background-color: $white;
-		border: 6px solid $mainColor;
+		background-color: $color-base-7;
+		border: 6px solid $color-base-6;
 		top: 16px;
 		border-radius: 50%;
 		z-index: 1;
@@ -60,15 +58,15 @@
 		width: 0;
 		z-index: 1;
 		right: 30px;
-		border: medium solid white;
+		border: medium solid $color-base-7;
 		border-width: 10px 0 10px 10px;
-		border-color: transparent transparent transparent white;
+		border-color: transparent transparent transparent $color-base-7;
 		@media (max-width: rem(600)) {
 			top: 40px;
 			left: 30px;
-			border: medium solid white;
+			border: medium solid $color-base-7;
 			border-width: 10px 10px 10px 0;
-			border-color: transparent white transparent transparent;
+			border-color: transparent $color-base-7 transparent transparent;
 		}
 	}
 	&__right-side {
@@ -104,9 +102,9 @@
 
 	// === TIME-LINE CONTENT === //
 	&__content {
-		background-color: white;
+		background-color: $color-base-7;
 		position: relative;
-		border-radius: rem(3);
+		border-radius: rem(15);
 		padding: rem(12);
 	}
 	&__content-left {
