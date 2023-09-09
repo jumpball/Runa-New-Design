@@ -22,6 +22,9 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: rem(20);
 		align-items: flex-start;
+		@media (max-width: rem(991.98)) {
+			gap: rem(10);
+		}
 		@media (max-width: rem(767.98)) {
 			grid-template-columns: 1fr;
 			gap: rem(4);
@@ -234,6 +237,17 @@
 		width: 100%;
 		text-align: start;
 		@include adaptiveValue("font-size", 18, 16, 1600, 991.98, 1);
+		@media (max-width: rem(850)) {
+			@include adaptiveValue("font-size", 18, 14, 991.98, 768, 1);
+			width: rem(190);
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		@media (max-width: rem(767.98)) {
+			@include adaptiveValue("font-size", 18, 16, 767.98, 360, 1);
+			width: 100%;
+		}
 	}
 	// Ряд
 	&__row {

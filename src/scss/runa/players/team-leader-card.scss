@@ -96,19 +96,48 @@
 	&__bage {
 		margin: 14px 0px 0px 0px;
 		display: inline-flex;
-		padding: 8px 16px;
+		padding: 12px 16px;
 		align-items: center;
 		gap: 8px;
 		background-color: $white;
-		border-radius: rem(10);
+		border-radius: rem(10) 0px rem(10) 0px;
 		p {
 			color: $color-base-2;
 		}
 		@media (max-width: rem(699.98)) {
-			padding: 8px 10px;
+			//border-radius: rem(10) 0px rem(10) 0px;
+			padding: 10px 12px;
 			gap: 5px;
 		}
 	}
+
+	// = SOCIAL NETS = //
+	&__social-nets {
+		margin: 20px 0px 0px 0px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: rem(16);
+		@media (max-width: rem(649.98)) {
+			display: none;
+		}
+	}
+	&__social-net-btn {
+		background-color: $color-base-2;
+		//border-radius: rem(50);
+		border-radius: rem(10) 0px rem(10) 0px;
+		padding: rem(12);
+		width: rem(44);
+		height: rem(44);
+		transition: all 0.5s ease 0s;
+	}
+	&__social-net-btn:hover {
+		transition: all 0.5s ease 0s;
+		scale: 1.1;
+		background-color: $color-base-4;
+	}
+
 	&__position,
 	&__age,
 	&__height,

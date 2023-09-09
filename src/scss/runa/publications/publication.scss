@@ -33,8 +33,10 @@
 		max-height: rem(650);
 		height: rem(650);
 		//padding: 0px 0px 75% 0px;
-		//overflow: hidden;
+		overflow: hidden;
 		margin: 20px 0px 10px 0px;
+		border-radius: rem(15);
+		border: rem(1) solid $color-base-1;
 
 		@media (max-width: rem(1600)) {
 			@include adaptiveValue("height", 650, 350, 1600, 991.98, 1);
@@ -78,6 +80,8 @@
 		position: relative;
 		aspect-ratio: 16 / 9;
 		margin: 20px 0px 20px 0px;
+		border-radius: rem(15);
+		border: rem(1) solid $color-base-1;
 	}
 	&__video iframe {
 		position: absolute;
@@ -119,7 +123,7 @@
 		text-align: start;
 		text-transform: uppercase;
 		@include adaptiveValue("font-size", 20, 14, 1600, 650, 1);
-		color: $blue;
+		color: $color-base-4;
 		line-height: 150%;
 	}
 
@@ -128,7 +132,8 @@
 		width: fit-content;
 		position: absolute;
 		left: 0;
-		bottom: rem(10);
+		//bottom: rem(10);
+		bottom: 0;
 		//display: flex;
 		//justify-content: flex-start;
 		//align-items: center;
@@ -141,13 +146,11 @@
 		color: $white;
 		line-height: 150%;
 		z-index: 2;
+		border-radius: 0px rem(15) 0px 0px;
 		@media (max-width: rem(599.98)) {
 			padding: 6px 10px 6px 10px;
 			text-align: start;
 			font-size: rem(14);
-			//bottom: rem(-38);
-			//background-color: transparent;
-			//color: $gray;
 		}
 	}
 
@@ -160,7 +163,7 @@
 		align-items: center;
 		text-align: end;
 		@include adaptiveValue("font-size", 22, 18, 1600, 650, 1);
-		color: $gray;
+		color: $color-base-5;
 		line-height: 150%;
 	}
 
@@ -169,6 +172,7 @@
 		font-size: rem(24);
 		font-weight: 700;
 		line-height: 1.6;
+		color: $color-base-5;
 		span {
 			font-family: $fontFamily;
 		}
@@ -231,10 +235,11 @@
 	&__signature-text {
 		display: inline-block;
 		font-weight: 700;
+		color: $color-base-5;
 	}
 	// = SIGNATURE-LINK = //
 	&__signature-link {
 		display: inline-block;
-		color: $blue;
+		color: $color-base-4;
 	}
 }
