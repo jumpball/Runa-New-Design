@@ -1,5 +1,6 @@
 // === LEADERS SLIDER === //
 .leaders-slider {
+	position: relative;
 	//width: 100%;
 	//@include adaptiveValue("margin-top", 20, 10, 1050, 600, 1);
 
@@ -19,18 +20,48 @@
 	// === NAVIGATION & PAGINATION === //
 
 	&__navigation {
+		z-index: 4;
+		max-width: rem(1370);
+		width: 100%;
+		padding: 0px 20px 0px 20px;
+		position: absolute;
+		top: 45%;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include adaptiveValue("gap", 30, 20, 1600, 767.98, 1);
 	}
-
-	&__nav-prev {
-	}
-
+	&__nav-prev,
 	&__nav-next {
+		overflow: hidden;
+		opacity: 0.5;
+		border-radius: rem(15);
+		padding: rem(8);
+		background-color: transparent;
+		@include adaptiveValue("width", 50, 40, 1600, 767.98, 1);
+		@include adaptiveValue("height", 50, 40, 1600, 767.98, 1);
+		transition: all 0.5s ease 0s;
+		cursor: pointer;
+		@media (max-width: rem(991.98)) {
+			opacity: 1;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				transition: all 0.5s ease 0s;
+				transform: scale(1.3);
+				opacity: 1;
+				border: rem(2) solid $color-base-4;
+				background-color: $color-base-1;
+			}
+		}
 	}
+
 	&__pagination {
 	}
 
 	.swiper-pagination {
-		//display: none;
 		position: relative;
 		margin-top: rem(30);
 		@media (max-width: rem(767.98)) {

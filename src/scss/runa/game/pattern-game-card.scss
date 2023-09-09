@@ -7,13 +7,10 @@
 	justify-content: space-between;
 	align-items: stretch;
 	padding: 20px 0px 30px 0px;
-	//background-color: $color-base-2;
-
-	//background: linear-gradient(126.34deg, #3f107d 24.19%, rgba(63, 16, 125, 0) 41.11%);
-	background-image: url("@img/RUNA/patterns/patterns-1.svg");
-	//background: linear-gradient(180deg, rgba(46, 0, 106, 0.6) 0%, rgba(46, 0, 106, 0) 100%);
+	background-color: $color-base-2;
+	background-image: url("@img/RUNA/patterns/patterns-8.svg");
 	background-size: cover;
-	background-blend-mode: multiply;
+	//background-blend-mode: multiply;
 	border-radius: rem(15);
 	overflow: hidden;
 	border: rem(1) solid $color-base-1;
@@ -184,11 +181,13 @@
 }
 
 .pattern-game-card-1 {
+	background-color: $color-base-4;
 	background-image: url("@img/RUNA/patterns/patterns-2.svg");
 	margin-top: rem(20);
 	//padding: 0px 0px 40px 0px;
 }
 .pattern-game-card-2 {
+	background-color: $color-base-4;
 	background-image: url("@img/RUNA/patterns/patterns-3.svg");
 	margin-top: rem(20);
 	//padding: 0px 0px 40px 0px;

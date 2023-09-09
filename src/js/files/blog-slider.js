@@ -210,7 +210,7 @@ var GalerySwiper = new Swiper('.galery-slider', {
 		el: '.swiper-pagination',
 		type: 'bullets',
 		clickable: true,
-		//dynamicBullets:true,
+		dynamicBullets: true,
 
 	},
 	navigation: {

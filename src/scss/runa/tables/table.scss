@@ -5,6 +5,9 @@
 	&__box {
 		margin: 0px 0px 20px 0px;
 	}
+	&__box:last-child {
+		margin: 0px 0px 0px 0px;
+	}
 
 	// = LEGEND - BLOCK / BOX = //
 	&__legend-block {
