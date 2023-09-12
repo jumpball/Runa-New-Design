@@ -13,6 +13,7 @@
 		@media (max-width: rem(991.98)) {
 			display: flex;
 			flex-direction: column;
+
 			//margin-bottom: 0px;
 		}
 	}
@@ -82,11 +83,14 @@
 
 	// = SIDEBAR SPOLLERS = //
 	&__sidebar-spollers {
-		margin: 10px 0px 10px 0px;
-
+		//margin: 0px 0px 10px 0px;
+		display: flex;
+		flex-direction: column;
+		gap: rem(10);
 		@media (max-width: rem(991.98)) {
 			width: 100%;
 			display: flex;
+			flex-direction: row;
 			gap: rem(10);
 		}
 		@media (max-width: rem(767.98)) {
@@ -97,6 +101,8 @@
 
 	// = SPOLLERS BOX = //
 	&__spollers-box {
+		background-color: $color-base-1;
+		border-radius: rem(15);
 	}
 
 	// = SPOLLERS = //
@@ -120,22 +126,18 @@
 		text-align: left;
 		color: $white;
 		//border: rem(1) solid $color-base-1;
-		border-radius: rem(3);
+		border-radius: rem(15);
 		background-color: $color-base-1;
 		letter-spacing: rem(1);
 		text-transform: uppercase;
-		font-size: rem(16);
-		@media (max-width: rem(991.98)) {
-			//border: rem(1) solid $color-base-1;
-			//border-radius: rem(3);
-		}
+		font-size: rem(18);
+		transition: transform 0.5s ease 0s;
 
 		._spoller-init & {
 			cursor: pointer;
 			//border: 1px solid $white;
 			//padding: rem(10) rem(15);
-			border-radius: rem(3);
-			margin-bottom: rem(10);
+
 			@media (max-width: rem(767.98)) {
 				margin-bottom: rem(0);
 			}
@@ -159,6 +161,8 @@
 				right: rem(16);
 			}
 			&._spoller-active {
+				transition: transform 0.5s ease 0s;
+				border-radius: rem(15) rem(15) 0px 0px;
 				&::before {
 					transition: transform 0.5s ease 0s;
 					transform: rotate(180deg);
@@ -173,7 +177,10 @@
 
 	// = SPOLLERS BODY = //
 	&__spollers-body {
-		margin: 10px 0px 10px 0px;
+		//margin: 0px 0px 10px 0px;
+		padding: 10px 10px 10px 10px;
+		background-color: $color-base-1;
+		border-radius: 0px 0px rem(15) rem(15);
 	}
 
 	// = SPOLLERS LIST = //
@@ -181,7 +188,7 @@
 		cursor: pointer;
 		padding: 0px 0px 0px 4px;
 		font-size: rem(16);
-		color: $blue;
+		color: $color-base-4;
 		//font-weight: 900;
 		text-transform: uppercase;
 		@media (max-width: rem(991.98)) {
@@ -208,7 +215,7 @@
 	&__spollers-link {
 		@media (any-hover: hover) {
 			&:hover {
-				color: $color-base-1;
+				color: $color-base-5;
 				text-decoration: underline;
 			}
 		}

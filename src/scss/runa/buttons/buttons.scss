@@ -17,7 +17,8 @@
 	//box-shadow: 2px 2px 4px rgba(34, 60, 80, 0.4);
 	@media (any-hover: hover) {
 		&:hover {
-			box-shadow: 4px 4px 8px rgba(34, 60, 80, 0.4);
+			//box-shadow: 4px 4px 8px rgba(34, 60, 80, 0.4);
+			scale: 1.05;
 			transition: all 0.5s ease 0s;
 		}
 	}
@@ -40,23 +41,6 @@
 		padding: 12px 24px 12px 24px;
 	}
 }
-.cards-button {
-	display: flex;
-	width: fit-content;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-
-	height: rem(56);
-	//min-width: rem(220);
-	@include adaptiveValue("min-width", 220, 190, 1920, 768, 1);
-	padding: 16px 32px;
-	border-radius: 15px 0px 15px 0px;
-	@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
-	@include adaptiveValue("line-height", 24, 20, 1920, 768, 1);
-	font-weight: 700;
-}
-
 .average-button {
 	line-height: rem(20);
 	height: rem(40);
@@ -73,15 +57,54 @@
 	line-height: rem(16);
 	height: rem(32);
 	padding: 8px 16px 8px 16px;
-	@include adaptiveValue("font-size", 12, 10, 1600, 991.98, 1);
+	@include adaptiveValue("font-size", 14, 12, 1600, 991.98, 1);
 	//font-size: rem(11);
-	min-width: rem(116);
-	//@media (max-width: rem(449.98)) {
-	//font-size: rem(10);
-	//min-width: rem(120);
-	//padding: 8px 16px 8px 16px;
-	//}
+	//min-width: rem(116);
+	@media (max-width: rem(1199.98)) {
+		//font-size: rem(10);
+		//min-width: rem(120);
+		padding: 8px 8px 8px 8px;
+	}
+	@media (max-width: rem(449.98)) {
+		max-width: rem(160);
+	}
 }
+
+// = CARDS BUTTON = //
+.cards-button {
+	display: flex;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	height: rem(56);
+	//min-width: rem(220);
+	@include adaptiveValue("min-width", 220, 190, 1920, 768, 1);
+	padding: 16px 32px;
+	border-radius: 15px 0px 15px 0px;
+	@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
+	@include adaptiveValue("line-height", 24, 20, 1920, 768, 1);
+	font-weight: 700;
+}
+
+// = CALENDAR BUTTON = //
+.calendar-button {
+	display: flex;
+	//width: fit-content;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	//height: rem(56);
+	width: 100%;
+	//margin: 0px 10px 0px 10px;
+	//@include adaptiveValue("min-width", 220, 190, 1920, 768, 1);
+	//padding: 16px 32px;
+	border-radius: rem(5);
+	//@include adaptiveValue("font-size", 22, 16, 1920, 768, 1);
+	//@include adaptiveValue("line-height", 24, 20, 1920, 768, 1);
+	font-weight: 700;
+}
+
 // = RST SELECTOR BUTTON = //
 .rst-selector-button {
 	display: flex;
@@ -347,13 +370,14 @@
 }
 .white-button {
 	color: $mainColor;
-	background-color: $white;
+	background-color: $color-base-5;
 	transition: all 0.5s ease 0s;
 	//border: rem(1) solid $white;
 	@media (any-hover: hover) {
 		&:hover {
 			//color: $white;
-			background-color: $color-base-3;
+			color: $color-base-5;
+			background-color: $mainColor;
 			transition: all 0.5s ease 0s;
 		}
 	}
@@ -364,7 +388,8 @@
 	transition: all 0.5s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-			background-color: $mia_red;
+			background-color: $color-base-5;
+			color: $mainColor;
 			transition: all 0.5s ease 0s;
 		}
 	}

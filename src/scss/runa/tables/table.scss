@@ -83,7 +83,7 @@
 		color: $color-base-4;
 		background-color: $color-base-8;
 		border-right: 1px solid rgba(113, 166, 220, 0.2);
-		//border-right: 1px solid $color-base-7;
+		//border-right: 1px solid $color-base-1;
 		font-size: 15px;
 		text-transform: uppercase;
 		font-weight: 100;
@@ -122,7 +122,7 @@
 		font-size: 16px;
 		white-space: nowrap;
 		border-right: 1px solid rgba(113, 166, 220, 0.2);
-		//border-right: 1px solid $color-base-5;
+		//border-right: 1px solid $color-base-1;
 		min-width: 3.4375rem;
 	}
 	&__block table tbody tr:hover td {
@@ -180,6 +180,7 @@
 		font-size: 16px;
 		white-space: nowrap;
 		border-right: 1px solid rgba(113, 166, 220, 0.2);
+		//border-right: 1px solid $color-base-1;
 		min-width: 3.4375rem;
 	}
 	&__card table tbody tr:hover td {
@@ -385,7 +386,7 @@
 		//background-color: #0f524d;
 		background-color: $color-base-2;
 		border-bottom: 0.25rem solid #a4a9ad;
-		//border-right: 1px solid rgba(113, 166, 220, 0.2);
+		border-right: 1px solid rgba(113, 166, 220, 0.2);
 		font-size: 15px;
 		text-transform: uppercase;
 		font-weight: 100;
@@ -429,6 +430,7 @@
 		font-size: 16px;
 		white-space: nowrap;
 		border-right: 1px solid rgba(113, 166, 220, 0.2);
+		//border-right: 1px solid $color-base-1;
 	}
 	td:last-child {
 		border-right: 0;
@@ -500,6 +502,7 @@ td {
 	font-size: 16px;
 	white-space: nowrap;
 	border-right: 1px solid rgba(113, 166, 220, 0.2);
+	//border-right: 1px solid $color-base-1;
 }
 // .table-stats__block * {
 // 	-webkit-box-sizing: border-box;

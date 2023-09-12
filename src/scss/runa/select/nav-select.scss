@@ -3,6 +3,18 @@
 	// === nav-select NAV === //
 	&__nav {
 		margin: 0px 0px 30px 0px;
+		//padding: 0px 16px 20px 16px;
+	}
+	&__nav-on-tab {
+		margin: 30px 0px 0px 0px;
+		padding: 10px 16px 20px 16px;
+		background-color: $color-base-7;
+		border-radius: rem(10) rem(10) 0px 0px;
+		@media (max-width: rem(767.98)) {
+			margin: 0px 0px 0px 0px;
+			padding: 10px 0px 20px 0px;
+			background-color: $mainColor;
+		}
 	}
 
 	// === nav-select FORM === //
@@ -20,6 +32,20 @@
 	&__form-3-box {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+		gap: rem(20);
+		align-items: flex-start;
+		@media (max-width: rem(991.98)) {
+			gap: rem(10);
+		}
+		@media (max-width: rem(767.98)) {
+			grid-template-columns: 1fr;
+			gap: rem(5);
+		}
+	}
+
+	&__form-4-box {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		gap: rem(20);
 		align-items: flex-start;
 		@media (max-width: rem(991.98)) {
@@ -76,11 +102,11 @@
 		font-weight: 400;
 		padding: 0px 0px 3px 5px;
 	}
-	&__label-black {
-		color: $color-base-5;
-	}
+	// &__label-black {
+	// 	color: $color-base-5;
+	// }
 	&__label-white {
-		color: $color-base-4;
+		color: $white;
 	}
 
 	// === nav-select LIST === //
@@ -95,6 +121,7 @@
 .select {
 	position: relative;
 	font-family: $fontFamily;
+	text-transform: uppercase;
 	//Тело селекта
 	&__body {
 		position: relative;
@@ -102,7 +129,8 @@
 	// Заголовок
 	&__title {
 		font-family: $fontFamily;
-		border: rem(1) solid $color-base-7;
+		text-transform: uppercase;
+		border: rem(1) solid $white;
 		border-radius: rem(3);
 		width: 100%;
 		position: relative;
@@ -110,11 +138,13 @@
 		background-color: $color-base-6;
 		cursor: pointer;
 		//color: inherit;
-		color: $color-base-5;
+		color: $white;
 		text-align: left;
 	}
 	// Значение в заголовке
 	&__value {
+		font-family: $fontFamily;
+		text-transform: uppercase;
 		display: flex;
 		align-items: center;
 		height: rem(40);
@@ -134,7 +164,7 @@
 			width: 0;
 			border-left: 6px solid transparent;
 			border-right: 6px solid transparent;
-			border-top: 10px solid $color-base-5;
+			border-top: 10px solid $white;
 			transition: transform 0.5s ease 0s;
 
 			._select-open & {
@@ -156,7 +186,7 @@
 		font-style: italic;
 		@include adaptiveValue("font-size", 14, 12, 1600, 415, 1);
 		text-transform: uppercase;
-		color: $color-base-6;
+		color: $white;
 		font-weight: 400;
 	}
 
@@ -165,7 +195,7 @@
 		font-style: italic;
 		@include adaptiveValue("font-size", 14, 12, 1600, 415, 1);
 		text-transform: uppercase;
-		color: $color-base-5;
+		color: $white;
 		font-weight: 400;
 	}
 	// Поле ввода
@@ -184,17 +214,19 @@
 	// Выпадающий список
 	&__options {
 		font-family: $fontFamily;
-		color: $color-base-5;
+		color: $white;
+		text-transform: uppercase;
 		position: absolute;
 		top: rem(39);
 		border-radius: 0 0 3px 3px;
 		min-width: 100%;
+		height: fit-content;
 		left: 0;
 		background-color: $color-base-6;
 		border-top: 0;
-		border: 1px solid $color-base-7;
+		border: 1px solid $white;
 		border-top: 0;
-		padding: 10px 0px 5px 0px;
+		padding: 10px 0px 10px 0px;
 		z-index: 2;
 	}
 	// Оболочка при скролле
@@ -213,9 +245,10 @@
 	// Пункт
 	&__option {
 		font-family: $fontFamily;
+		text-transform: uppercase;
 		width: 100%;
 		text-align: left;
-		@include adaptiveValue("font-size", 18, 16, 1600, 991.98, 1);
+		@include adaptiveValue("font-size", 17, 15, 1600, 991.98, 1);
 		cursor: pointer;
 		padding: 8px 12px;
 		color: inherit;
@@ -226,7 +259,7 @@
 
 		@media (any-hover: hover) {
 			&:hover {
-				background: $color-base-7;
+				background-color: $color-base-7;
 				color: $color-base-4;
 			}
 		}
@@ -236,16 +269,17 @@
 	&__content {
 		width: 100%;
 		text-align: start;
-		@include adaptiveValue("font-size", 18, 16, 1600, 991.98, 1);
+		@include adaptiveValue("font-size", 17, 15, 1600, 991.98, 1);
 		@media (max-width: rem(850)) {
-			@include adaptiveValue("font-size", 18, 14, 991.98, 768, 1);
+			@include adaptiveValue("font-size", 17, 14, 991.98, 768, 1);
 			width: rem(190);
 			overflow: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 		}
 		@media (max-width: rem(767.98)) {
-			@include adaptiveValue("font-size", 18, 16, 767.98, 360, 1);
+			//@include adaptiveValue("font-size", 18, 16, 767.98, 360, 1);
+			font-size: rem(16);
 			width: 100%;
 		}
 	}

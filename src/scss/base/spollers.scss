@@ -19,14 +19,15 @@
 	transition: all 0.5s ease 0s;
 	border-radius: rem(3);
 	overflow: hidden;
-	width: rem(30);
-	height: rem(30);
+	width: rem(40);
+	height: rem(40);
 	cursor: default;
 	margin: 0px 0px 10px 0px;
-	@media (max-width: rem(499.98)) {
-		top: 0;
-		right: 0;
-	}
+
+	//@media (max-width: rem(499.98)) {
+	//top: 0;
+	//right: 0;
+	//}
 	._spoller-init & {
 		cursor: pointer;
 	}
@@ -69,6 +70,16 @@
 
 .spollers__title-1274 {
 	@media (min-width: rem(1274.98)) {
+		display: none;
+	}
+
+	._spoller-init & {
+		cursor: pointer;
+	}
+}
+
+.spollers__title-1319 {
+	@media (min-width: rem(1319.98)) {
 		display: none;
 	}
 

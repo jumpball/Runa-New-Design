@@ -78,6 +78,7 @@
 	}
 	&__video {
 		position: relative;
+		overflow: hidden;
 		aspect-ratio: 16 / 9;
 		margin: 20px 0px 20px 0px;
 		border-radius: rem(15);
@@ -183,6 +184,7 @@
 
 	// = ICONS = //
 	&__icons {
+		margin: 20px 0px 0px 0px;
 		grid-column: 1 / span 1;
 		width: rem(54);
 		height: rem(330);

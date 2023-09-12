@@ -56,10 +56,10 @@ const slider = document.querySelector('.publications-slider');
 let publicationsSwiper = null;
 
 function initSwiper() {
-	const MOBILE_BREAKPOINT = 949.98;
+	const MOBILE_BREAKPOINT = 767.98;
 	if (window.innerWidth <= MOBILE_BREAKPOINT && slider && slider.dataset.mobile === 'false') {
 		publicationsSwiper = new Swiper(slider, {
-			slidesPerView: 1,
+			slidesPerView: "auto",
 			spaceBetween: 10,
 			observer: true,
 			observeParents: true,
@@ -77,7 +77,7 @@ function initSwiper() {
 					slidesPerView: 2.1,
 				},
 				[MOBILE_BREAKPOINT]: {
-					slidesPerView: 2.2,
+					slidesPerView: 3.1,
 				},
 			}
 		});

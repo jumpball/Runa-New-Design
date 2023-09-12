@@ -150,6 +150,12 @@ body {
 }
 
 // === BLOCK HIDDEN === //
+.block-hidden-1319 {
+	@media (max-width: rem(1319.98)) {
+		display: none;
+	}
+}
+
 .block-hidden-1274 {
 	@media (max-width: rem(1274.98)) {
 		display: none;
