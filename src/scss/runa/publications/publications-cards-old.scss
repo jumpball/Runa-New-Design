@@ -7,7 +7,7 @@
 	background: $color-base-1;
 	//border: 1px solid $mainColor;
 	overflow: hidden;
-	border-radius: rem(15);
+	border-radius: rem(10);
 	transition: box-shadow 0.3s;
 	z-index: 2;
 
@@ -72,7 +72,7 @@
 		height: 30px;
 		padding: 0 24px;
 		background: $color-base-2;
-		border-radius: 0px 15px 0px 15px;
+		border-radius: 0px 10px 0px 10px;
 		color: $white;
 		font-size: 12px;
 		line-height: 30px;

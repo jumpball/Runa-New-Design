@@ -11,7 +11,7 @@
 	background-image: url("@img/RUNA/patterns/patterns-8.svg");
 	background-size: cover;
 	//background-blend-mode: multiply;
-	border-radius: rem(15);
+	border-radius: rem(10);
 	overflow: hidden;
 	border: rem(1) solid $color-base-1;
 	cursor: pointer;
@@ -47,7 +47,7 @@
 		background-color: $white;
 		margin: 20px 0px 10px 0px;
 		padding: 8px 16px 8px 16px;
-		border-radius: rem(15);
+		border-radius: rem(10);
 		display: flex;
 		@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
 		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
@@ -60,7 +60,7 @@
 		display: flex;
 		@include adaptiveValue("font-size", 18, 14, 1920, 768, 1);
 		@include adaptiveValue("line-height", 24, 18, 1920, 768, 1);
-		border-radius: rem(15);
+		border-radius: rem(10);
 
 		p {
 			color: $color-base-2;

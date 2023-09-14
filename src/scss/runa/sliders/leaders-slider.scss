@@ -13,7 +13,7 @@
 		width: 100%;
 		height: fit-content;
 		//border: rem(1) solid $color-base-1;
-		border-radius: rem(15);
+		border-radius: rem(10);
 		overflow: hidden;
 	}
 
@@ -36,7 +36,7 @@
 	&__nav-next {
 		overflow: hidden;
 		opacity: 0.5;
-		border-radius: rem(15);
+		border-radius: rem(10);
 		padding: rem(8);
 		background-color: transparent;
 		@include adaptiveValue("width", 50, 40, 1600, 767.98, 1);

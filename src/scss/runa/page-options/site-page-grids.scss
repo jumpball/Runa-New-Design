@@ -102,7 +102,7 @@
 	// = SPOLLERS BOX = //
 	&__spollers-box {
 		background-color: $color-base-1;
-		border-radius: rem(15);
+		border-radius: rem(10);
 	}
 
 	// = SPOLLERS = //
@@ -126,7 +126,7 @@
 		text-align: left;
 		color: $white;
 		//border: rem(1) solid $color-base-1;
-		border-radius: rem(15);
+		border-radius: rem(10);
 		background-color: $color-base-1;
 		letter-spacing: rem(1);
 		text-transform: uppercase;
@@ -162,7 +162,7 @@
 			}
 			&._spoller-active {
 				transition: transform 0.5s ease 0s;
-				border-radius: rem(15) rem(15) 0px 0px;
+				border-radius: rem(10) rem(10) 0px 0px;
 				&::before {
 					transition: transform 0.5s ease 0s;
 					transform: rotate(180deg);
@@ -180,7 +180,7 @@
 		//margin: 0px 0px 10px 0px;
 		padding: 10px 10px 10px 10px;
 		background-color: $color-base-1;
-		border-radius: 0px 0px rem(15) rem(15);
+		border-radius: 0px 0px rem(10) rem(10);
 	}
 
 	// = SPOLLERS LIST = //

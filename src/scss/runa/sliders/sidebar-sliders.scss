@@ -27,7 +27,7 @@
 	// = ITEM = //
 	&__item {
 		border: rem(1) solid $color-base-1;
-		border-radius: rem(15);
+		border-radius: rem(10);
 		overflow: hidden;
 		@media (max-width: $tablet) {
 			border: none;

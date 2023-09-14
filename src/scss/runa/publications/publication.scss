@@ -35,7 +35,7 @@
 		//padding: 0px 0px 75% 0px;
 		overflow: hidden;
 		margin: 20px 0px 10px 0px;
-		border-radius: rem(15);
+		border-radius: rem(10);
 		border: rem(1) solid $color-base-1;
 
 		@media (max-width: rem(1600)) {
@@ -81,7 +81,7 @@
 		overflow: hidden;
 		aspect-ratio: 16 / 9;
 		margin: 20px 0px 20px 0px;
-		border-radius: rem(15);
+		border-radius: rem(10);
 		border: rem(1) solid $color-base-1;
 	}
 	&__video iframe {
@@ -147,7 +147,7 @@
 		color: $white;
 		line-height: 150%;
 		z-index: 2;
-		border-radius: 0px rem(15) 0px 0px;
+		border-radius: 0px rem(10) 0px 0px;
 		@media (max-width: rem(599.98)) {
 			padding: 6px 10px 6px 10px;
 			text-align: start;
